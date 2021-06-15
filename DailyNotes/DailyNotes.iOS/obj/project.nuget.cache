@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "2EW43NfPBWGNLgQRk+dGP++PTVNn8t1fq3tBTZkwjlngl82HH077sTmk2tIn2at2+T7RqNqMj9O9OiZPjCpsdw==",
+  "dgSpecHash": "8LOBcqbe2SkMACLqcZ6/MsySl78Rjycd7TzMywDR8lzy41vamPbelUK2W9lijNZTU/T3wZlmFO+4+Z8S5LAHrg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
+  "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usagi\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",

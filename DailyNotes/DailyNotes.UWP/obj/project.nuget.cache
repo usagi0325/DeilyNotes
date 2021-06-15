@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "qRdusqFiXREEogmU/UeVxvdh39Ns8bwO70B50LY4elGFmhSKLDC12Lps/fDCx1CtqQqhmi3D+yuGDke7I6D33g==",
+  "dgSpecHash": "x6oVP+FdGvOc0b3Kq6chv2Hm/kNnS18a4oavwi9kmMat2pdtdz5baVAO0zbS2iviq/fWpq91/iRvGb4DE1lIDw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
+  "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
   "expectedPackageFiles": [
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.native.compiler\\2.2.8-rel-28605-00\\microsoft.net.native.compiler.2.2.8-rel-28605-00.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\microsoft.net.uwpcoreruntimesdk\\2.2.10\\microsoft.net.uwpcoreruntimesdk.2.2.10.nupkg.sha512",

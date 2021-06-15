@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {}
+    "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {
+    "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
+        "projectUniqueName": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
         "projectName": "DailyNotes.iOS",
-        "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
+        "projectPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
         "packagesPath": "C:\\Users\\usagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\obj\\",
+        "outputPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "xamarinios10": {
             "projectReferences": {
-              "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
-                "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj"
+              "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
+                "projectPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj"
               }
             }
           }
@@ -69,14 +69,14 @@
         }
       }
     },
-    "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
+    "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
+        "projectUniqueName": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
         "projectName": "DailyNotes",
-        "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
+        "projectPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
         "packagesPath": "C:\\Users\\usagi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\obj\\",
+        "outputPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

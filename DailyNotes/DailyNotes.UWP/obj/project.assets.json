@@ -10614,11 +10614,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
+      "projectUniqueName": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
       "projectName": "DailyNotes.UWP",
-      "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
+      "projectPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
       "packagesPath": "C:\\Users\\usagi\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.UWP\\obj\\",
+      "outputPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.UWP\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -10640,8 +10640,8 @@
       "frameworks": {
         "uap10.0.16299": {
           "projectReferences": {
-            "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
-              "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj"
+            "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj": {
+              "projectPath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj"
             }
           }
         }

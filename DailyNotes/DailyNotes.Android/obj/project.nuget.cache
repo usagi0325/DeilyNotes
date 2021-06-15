@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "045FQK+1Gu4ffs6rMyru2joj5C/ihJoW855zCvZmRCApsLdtpCMrZtBj5sIRlDKwq5poN47mstGrFnzo1Tp7Jg==",
+  "dgSpecHash": "rNm9FuXvnqf6D7z+lAYRDMgL6aTLo5jRmzAp0gVFsDz5CBuMHF5yZo0vEhkrvRattVJzSQIljsqcihgLfqa+2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.Android\\DailyNotes.Android.csproj",
+  "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.Android\\DailyNotes.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\usagi\\.nuget\\packages\\prism.core\\8.0.0.1909\\prism.core.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
