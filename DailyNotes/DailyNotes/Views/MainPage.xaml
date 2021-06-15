@@ -10,7 +10,7 @@
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
         <Button Text="テストボタン"/>
-        <Label Text="テスト追加"/>
+        <Label Text="Git登録テスト"/>
     </StackLayout>
 
 </ContentPage>
