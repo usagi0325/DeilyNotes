@@ -1,16 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DailyNotes.ViewModels"
              x:Class="DailyNotes.Views.MainPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+             prism:ViewModelLocator.AutowireViewModel="True"
              Title="{Binding Title}">
-
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="設定" Order="Secondary"/>
+        <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingView, Mode=OneWay}"/>
     </ContentPage.ToolbarItems>
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
         <Button Text="テストボタン"/>
         <Label Text="Git登録テスト"/>
+        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+            <Label Text="{Binding TestLabel}" />
+        </StackLayout>
     </StackLayout>
+    
 
 </ContentPage>

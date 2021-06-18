@@ -57,7 +57,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1364, )"
+              "version": "[5.0.0.2012, )"
             }
           },
           "imports": [
@@ -137,6 +137,10 @@
               "version": "[2.0.3, )",
               "autoReferenced": true
             },
+            "Prism.Core": {
+              "target": "Package",
+              "version": "[8.1.97, )"
+            },
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
@@ -155,7 +159,7 @@
             },
             "Xamarin.Forms": {
               "target": "Package",
-              "version": "[4.8.0.1364, )"
+              "version": "[5.0.0.2012, )"
             }
           },
           "imports": [

@@ -17,6 +17,7 @@ namespace DailyNotes.ViewModels
             get { return _title; }
             set { SetProperty(ref _title, value); }
         }
+        public ViewModelBase() { }
 
         public ViewModelBase(INavigationService navigationService)
         {

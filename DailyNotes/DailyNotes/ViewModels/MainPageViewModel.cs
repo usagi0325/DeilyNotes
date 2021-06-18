@@ -6,6 +6,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Reactive.Bindings;
+using System.ComponentModel;
 
 namespace DailyNotes.ViewModels
 {
@@ -15,6 +16,7 @@ namespace DailyNotes.ViewModels
         /// 設定画面を開くコマンド
         /// </summary>
         AsyncReactiveCommand ShowSettingView { get; } = new AsyncReactiveCommand();
+
 
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
@@ -27,5 +29,7 @@ namespace DailyNotes.ViewModels
                 await NavigationService.NavigateAsync("MainPage/SettingPageView");
             });
         }
+
+        
     }
 }
