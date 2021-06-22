@@ -61,6 +61,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Android.Lottie">
+      <Version>3.7.0</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
     <PackageReference Include="Xamarin.Essentials.Interfaces" Version="1.5.3.2" />
     <PackageReference Include="Prism.Unity.Forms" Version="8.0.0.1909" />
@@ -73,6 +76,107 @@
     <LinkDescription Include="LinkerSettings.xml" />
   </ItemGroup>
   <ItemGroup>
+    <AndroidAsset Include="Assets\fonts\Comic Neue.ttf" />
+    <AndroidAsset Include="Assets\fonts\Helvetica Neue.ttf" />
+    <AndroidAsset Include="Assets\fonts\Helvetica.ttf" />
+    <AndroidAsset Include="Assets\fonts\Open Sans.ttf" />
+    <AndroidAsset Include="Assets\fonts\PT Serif.ttf" />
+    <AndroidAsset Include="Assets\fonts\Roboto.ttf" />
+    <AndroidAsset Include="Assets\Logo\LogoSmall.json" />
+    <AndroidAsset Include="Assets\Mobilo\A.json" />
+    <AndroidAsset Include="Assets\Mobilo\Apostrophe.json" />
+    <AndroidAsset Include="Assets\Mobilo\B.json" />
+    <AndroidAsset Include="Assets\Mobilo\BlinkingCursor.json" />
+    <AndroidAsset Include="Assets\Mobilo\C.json" />
+    <AndroidAsset Include="Assets\Mobilo\Colon.json" />
+    <AndroidAsset Include="Assets\Mobilo\Comma.json" />
+    <AndroidAsset Include="Assets\Mobilo\D.json" />
+    <AndroidAsset Include="Assets\Mobilo\E.json" />
+    <AndroidAsset Include="Assets\Mobilo\F.json" />
+    <AndroidAsset Include="Assets\Mobilo\G.json" />
+    <AndroidAsset Include="Assets\Mobilo\H.json" />
+    <AndroidAsset Include="Assets\Mobilo\I.json" />
+    <AndroidAsset Include="Assets\Mobilo\J.json" />
+    <AndroidAsset Include="Assets\Mobilo\K.json" />
+    <AndroidAsset Include="Assets\Mobilo\L.json" />
+    <AndroidAsset Include="Assets\Mobilo\M.json" />
+    <AndroidAsset Include="Assets\Mobilo\N.json" />
+    <AndroidAsset Include="Assets\Mobilo\O.json" />
+    <AndroidAsset Include="Assets\Mobilo\P.json" />
+    <AndroidAsset Include="Assets\Mobilo\Q.json" />
+    <AndroidAsset Include="Assets\Mobilo\R.json" />
+    <AndroidAsset Include="Assets\Mobilo\S.json" />
+    <AndroidAsset Include="Assets\Mobilo\T.json" />
+    <AndroidAsset Include="Assets\Mobilo\U.json" />
+    <AndroidAsset Include="Assets\Mobilo\V.json" />
+    <AndroidAsset Include="Assets\Mobilo\W.json" />
+    <AndroidAsset Include="Assets\Mobilo\X.json" />
+    <AndroidAsset Include="Assets\Mobilo\Y.json" />
+    <AndroidAsset Include="Assets\Mobilo\Z.json" />
+    <AndroidAsset Include="Assets\Tests\Alarm.json" />
+    <AndroidAsset Include="Assets\Tests\AllSet.json" />
+    <AndroidAsset Include="Assets\Tests\CheckSwitch.json" />
+    <AndroidAsset Include="Assets\Tests\City.json" />
+    <AndroidAsset Include="Assets\Tests\EllipseTrimPath.json" />
+    <AndroidAsset Include="Assets\Tests\Hosts.json" />
+    <AndroidAsset Include="Assets\Tests\Image.json" />
+    <AndroidAsset Include="Assets\Tests\Laugh4.json" />
+    <AndroidAsset Include="Assets\Tests\LightBulb.json" />
+    <AndroidAsset Include="Assets\Tests\LoopPlayOnce.json" />
+    <AndroidAsset Include="Assets\Tests\Mask_26.json" />
+    <AndroidAsset Include="Assets\Tests\MaskInv.json" />
+    <AndroidAsset Include="Assets\Tests\MatteInv.json" />
+    <AndroidAsset Include="Assets\Tests\MatteParentPrecomp.json" />
+    <AndroidAsset Include="Assets\Tests\Polygon.json" />
+    <AndroidAsset Include="Assets\Tests\Polystar.json" />
+    <AndroidAsset Include="Assets\Tests\PreCompMadness.json" />
+    <AndroidAsset Include="Assets\Tests\SplitDimensions.json" />
+    <AndroidAsset Include="Assets\Tests\Star.json" />
+    <AndroidAsset Include="Assets\Tests\TrimPathFill.json" />
+    <AndroidAsset Include="Assets\Tests\TrimPathsFull.json" />
+    <AndroidAsset Include="Assets\Walkthrough\FullScreen.json" />
+    <AndroidAsset Include="Assets\Walkthrough\Walkthrough.json" />
+    <AndroidAsset Include="Assets\9squares-AlBoardman.json" />
+    <AndroidAsset Include="Assets\Belo Foggy.json" />
+    <AndroidAsset Include="Assets\City.json" />
+    <AndroidAsset Include="Assets\Dash.json" />
+    <AndroidAsset Include="Assets\EmptyState.json" />
+    <AndroidAsset Include="Assets\HamburgerArrow.json" />
+    <AndroidAsset Include="Assets\Hello World.json" />
+    <AndroidAsset Include="Assets\JesseIntro.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Animated Graph.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - ATM.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Beating Heart.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Camera.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Countdown.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Shock.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Tongue.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Wink.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Favorite Star.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Gears.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Loading 1.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Loading 2.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Loading 3.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Loading 4.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Mail Sent.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Octopus.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Play and Like It.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Postcard.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Preloader.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Progress Success.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Retweet.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Star Wars Rey.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Tadah Image.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Tadah Video.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Touch ID.json" />
+    <AndroidAsset Include="Assets\lottiefiles.com - Video Camera.json" />
+    <AndroidAsset Include="Assets\LottieLogo1.json" />
+    <AndroidAsset Include="Assets\LottieLogo2.json" />
+    <AndroidAsset Include="Assets\MotionCorpse-Jrcanest.json" />
+    <AndroidAsset Include="Assets\Name.json" />
+    <AndroidAsset Include="Assets\PinJump.json" />
+    <AndroidAsset Include="Assets\TwitterHeart.json" />
+    <AndroidAsset Include="Assets\WeAccept.json" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />
   </ItemGroup>
@@ -111,6 +215,15 @@
       <Project>{A682884C-CB44-4A89-B752-27BB634E0ABE}</Project>
       <Name>DailyNotes</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Activity_Splash.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\Id\" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\Images\WeAccept\img_0.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <ProjectExtensions>

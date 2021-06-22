@@ -7,9 +7,6 @@ namespace DailyNotes.Views
         public MainPage()
         {
             InitializeComponent();
-
-            // ここまで、ちょっとよくわからん？　ナビゲーションサービスがうんたらかんたら
-            //BindingContext = new ViewModels.MainPageViewModel();
         }
     }
 }

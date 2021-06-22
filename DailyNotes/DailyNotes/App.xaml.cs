@@ -2,13 +2,14 @@ using DailyNotes.ViewModels;
 using DailyNotes.Views;
 using Prism;
 using Prism.Ioc;
+using Prism.Unity;
 using Xamarin.Essentials.Implementation;
 using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
 
 namespace DailyNotes
 {
-    public partial class App
+    public partial class AppÅ@: PrismApplication
     {
         public App(IPlatformInitializer initializer)
             : base(initializer)
@@ -19,7 +20,7 @@ namespace DailyNotes
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync("NavigationPage/MainPage");
+            await NavigationService.NavigateAsync(typeof(MainPage).Name);
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
@@ -28,6 +29,7 @@ namespace DailyNotes
 
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
+            containerRegistry.RegisterForNavigation<SettingView, SettingViewModel>();
         }
     }
 }

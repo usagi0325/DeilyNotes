@@ -7,14 +7,15 @@
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
-        <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingView, Mode=OneWay}"/>
+        <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
     </ContentPage.ToolbarItems>
+    
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
-        <Button Text="テストボタン"/>
-        <Label Text="Git登録テスト"/>
+        <Button Text="テストボタン" Command="{Binding ShowSettingCommand}"/>
+        <Label Text="{Binding testMozi.Value}"/>
         <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="{Binding TestLabel}" />
+            <Label Text="{Binding testMozi2.Value}" />
         </StackLayout>
     </StackLayout>
     

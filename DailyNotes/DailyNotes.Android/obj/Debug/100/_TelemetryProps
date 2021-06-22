@@ -1,4 +1,4 @@
-IsIncrementalBuild=true
+IsIncrementalBuild=false
 AndroidUseAapt2=True
 UseSharedRuntime=true
 UseFastDeployment=false
@@ -23,6 +23,6 @@ AndroidDexTool=d8
 AndroidLinkTool=
 AndroidEnableProfiledAot=
 AndroidInstallAfterBuild=True
-AndroidSessionId=fc6e3b4f-4e69-4716-b5bf-0a04ca19822d
+AndroidSessionId=08a280b8-7ba4-4d6d-ab20-c95a55655440
 BuildConfiguration=Debug
 TemplateName=

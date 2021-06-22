@@ -2,15 +2,20 @@ package crc645ca98e28ea21ac69;
 
 
 public class SplashActivity
-	extends androidx.appcompat.app.AppCompatActivity
+	extends android.app.Activity
 	implements
-		mono.android.IGCUserPeer
+		mono.android.IGCUserPeer,
+		android.animation.Animator.AnimatorListener
 {
 /** @hide */
 	public static final String __md_methods;
 	static {
 		__md_methods = 
 			"n_onResume:()V:GetOnResumeHandler\n" +
+			"n_onAnimationCancel:(Landroid/animation/Animator;)V:GetOnAnimationCancel_Landroid_animation_Animator_Handler:Android.Animation.Animator/IAnimatorListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_onAnimationEnd:(Landroid/animation/Animator;)V:GetOnAnimationEnd_Landroid_animation_Animator_Handler:Android.Animation.Animator/IAnimatorListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_onAnimationRepeat:(Landroid/animation/Animator;)V:GetOnAnimationRepeat_Landroid_animation_Animator_Handler:Android.Animation.Animator/IAnimatorListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
+			"n_onAnimationStart:(Landroid/animation/Animator;)V:GetOnAnimationStart_Landroid_animation_Animator_Handler:Android.Animation.Animator/IAnimatorListenerInvoker, Mono.Android, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null\n" +
 			"";
 		mono.android.Runtime.register ("DailyNotes.Droid.SplashActivity, DailyNotes.Android", SplashActivity.class, __md_methods);
 	}
@@ -24,20 +29,44 @@ public class SplashActivity
 	}
 
 
-	public SplashActivity (int p0)
-	{
-		super (p0);
-		if (getClass () == SplashActivity.class)
-			mono.android.TypeManager.Activate ("DailyNotes.Droid.SplashActivity, DailyNotes.Android", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
-	}
-
-
 	public void onResume ()
 	{
 		n_onResume ();
 	}
 
 	private native void n_onResume ();
+
+
+	public void onAnimationCancel (android.animation.Animator p0)
+	{
+		n_onAnimationCancel (p0);
+	}
+
+	private native void n_onAnimationCancel (android.animation.Animator p0);
+
+
+	public void onAnimationEnd (android.animation.Animator p0)
+	{
+		n_onAnimationEnd (p0);
+	}
+
+	private native void n_onAnimationEnd (android.animation.Animator p0);
+
+
+	public void onAnimationRepeat (android.animation.Animator p0)
+	{
+		n_onAnimationRepeat (p0);
+	}
+
+	private native void n_onAnimationRepeat (android.animation.Animator p0);
+
+
+	public void onAnimationStart (android.animation.Animator p0)
+	{
+		n_onAnimationStart (p0);
+	}
+
+	private native void n_onAnimationStart (android.animation.Animator p0);
 
 	private java.util.ArrayList refList;
 	public void monodroidAddReference (java.lang.Object obj)

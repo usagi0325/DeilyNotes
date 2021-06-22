@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "KhPCi5AVWcUWqu5FqvKRWFEf99YEDBTjAwkJI7nzR62h9vGaWoZOZDs3a2PjGuDw4UQexYghB5hdpaTenMD9yg==",
+  "dgSpecHash": "BrgzCyBtQQwtK/ZpPjbH+c0Ug/vUSTO3BB94cgSUR7xeibSQ8rsfeash+brxnh/7zbQjaV8OXeDuZGFWvorvaA==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\usagi\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.10\\com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

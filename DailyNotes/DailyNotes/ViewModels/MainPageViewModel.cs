@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using Reactive.Bindings;
 using System.ComponentModel;
+using Reactive.Bindings.Extensions;
+using DailyNotes.Views;
 
 namespace DailyNotes.ViewModels
 {
@@ -15,8 +17,14 @@ namespace DailyNotes.ViewModels
         /// <summary>
         /// 設定画面を開くコマンド
         /// </summary>
-        AsyncReactiveCommand ShowSettingView { get; } = new AsyncReactiveCommand();
+        public AsyncReactiveCommand ShowSettingCommand { get; } = new AsyncReactiveCommand();
 
+        /// <summary>
+        /// テストReactivePropaty 
+        /// </summary>
+        public ReactiveProperty<string> testMozi { get; set; } = new ReactiveProperty<string>("こんばんわ");
+
+        public ReactiveProperty<string> testMozi2 { get; set; } = new ReactiveProperty<string>();
 
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
@@ -24,10 +32,14 @@ namespace DailyNotes.ViewModels
             // タイトルの設定
             Title = "メイン画面";
 
-            ShowSettingView.Subscribe(async _ =>
+            testMozi2.Value = "テストバインディング";
+
+            ShowSettingCommand.Subscribe(async _ =>
             {
-                await NavigationService.NavigateAsync("MainPage/SettingPageView");
-            });
+                Console.WriteLine("ボタンが押されたよ");
+                await NavigationService.NavigateAsync(typeof(SettingView).Name);
+            }).AddTo(Disposable);
+
         }
 
         

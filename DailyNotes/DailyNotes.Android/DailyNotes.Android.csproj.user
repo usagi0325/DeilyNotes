@@ -3,5 +3,6 @@
   <PropertyGroup>
     <SelectedDevice>pixel_3_xl_q_10_0_-_api_29</SelectedDevice>
     <DefaultDevice>pixel_3_xl_q_10_0_-_api_29</DefaultDevice>
+    <AndroidDesignerPreferredDevice>Nexus 4</AndroidDesignerPreferredDevice>
   </PropertyGroup>
 </Project>

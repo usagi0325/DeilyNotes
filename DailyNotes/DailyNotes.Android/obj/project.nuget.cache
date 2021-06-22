@@ -1,14 +1,17 @@
 {
   "version": 2,
-  "dgSpecHash": "qj/PoBLa+4YTWb6Gyixbw7nLWjPFYcUGNJrPEGKibb3CfFaC+tFKMGJpZKYn/zv5DuK/PQzYb7DYRppCODIDGw==",
+  "dgSpecHash": "EfmWSHuJM6v+BTuHgqrnAhkdhIrq+TRBunJ6OfhHrMcazTkmh9AkhgDdC5IJw6hhiQ3Y7FEpzuwukI02fzSqKg==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.Android\\DailyNotes.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\usagi\\.nuget\\packages\\com.airbnb.android.lottie\\3.7.0\\com.airbnb.android.lottie.3.7.0.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\4.0.10\\com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.unity.forms\\8.0.0.1909\\prism.unity.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty\\7.11.0\\reactiveproperty.7.11.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty.core\\7.11.0\\reactiveproperty.core.7.11.0.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\square.okio\\1.17.4\\square.okio.1.17.4.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",

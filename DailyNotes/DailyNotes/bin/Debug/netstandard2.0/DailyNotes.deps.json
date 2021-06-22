@@ -9,6 +9,7 @@
     ".NETStandard,Version=v2.0/": {
       "DailyNotes/1.0.0": {
         "dependencies": {
+          "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "NETStandard.Library": "2.0.3",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
@@ -19,6 +20,17 @@
         },
         "runtime": {
           "DailyNotes.dll": {}
+        }
+      },
+      "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
+        "dependencies": {
+          "Xamarin.Forms": "5.0.0.2012"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Lottie.Forms.dll": {
+            "assemblyVersion": "4.0.10.0",
+            "fileVersion": "4.0.10.0"
+          }
         }
       },
       "Microsoft.NETCore.Platforms/1.1.0": {},
@@ -213,6 +225,13 @@
       "type": "project",
       "serviceable": false,
       "sha512": ""
+    },
+    "Com.Airbnb.Xamarin.Forms.Lottie/4.0.10": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8FjZg6fCRcH3s1elgAiMEiX1CF5alaUCsNUG0I16pcycZAXeh2P4ZU+c1PRVnA/GwyBAQLU+yV/jWhW2ORNgkw==",
+      "path": "com.airbnb.xamarin.forms.lottie/4.0.10",
+      "hashPath": "com.airbnb.xamarin.forms.lottie.4.0.10.nupkg.sha512"
     },
     "Microsoft.NETCore.Platforms/1.1.0": {
       "type": "package",

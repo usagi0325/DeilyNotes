@@ -6,7 +6,7 @@
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:name="crc645ca98e28ea21ac69.MainApplication" android:allowBackup="true" android:appComponentFactory="androidx.core.app.CoreComponentFactory" android:debuggable="true" android:extractNativeLibs="true" android:icon="@mipmap/icon" android:label="@string/app_name" android:theme="@style/MainTheme">
     <activity android:name="crc645ca98e28ea21ac69.MainActivity" android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/MainTheme" />
-    <activity android:name="crc645ca98e28ea21ac69.SplashActivity" android:noHistory="true" android:theme="@style/MainTheme.Splash">
+    <activity android:name="crc645ca98e28ea21ac69.SplashActivity" android:noHistory="true" android:theme="@style/Theme.Splash">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

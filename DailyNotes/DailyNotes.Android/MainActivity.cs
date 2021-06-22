@@ -15,9 +15,12 @@ namespace DailyNotes.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            // グローバル状態のすべての設定を定義
             base.OnCreate(savedInstanceState);
 
+            // 初期化処理
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
+
             LoadApplication(new App(new AndroidInitializer()));
         }
 

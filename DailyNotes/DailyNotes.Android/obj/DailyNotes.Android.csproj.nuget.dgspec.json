@@ -42,6 +42,10 @@
       "frameworks": {
         "monoandroid10.0": {
           "dependencies": {
+            "Com.Airbnb.Android.Lottie": {
+              "target": "Package",
+              "version": "[3.7.0, )"
+            },
             "Prism.Unity.Forms": {
               "target": "Package",
               "version": "[8.0.0.1909, )"
@@ -98,6 +102,10 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Com.Airbnb.Xamarin.Forms.Lottie": {
+              "target": "Package",
+              "version": "[4.0.10, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
