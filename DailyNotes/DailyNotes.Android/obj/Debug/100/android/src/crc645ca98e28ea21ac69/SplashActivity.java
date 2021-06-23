@@ -2,7 +2,7 @@ package crc645ca98e28ea21ac69;
 
 
 public class SplashActivity
-	extends android.app.Activity
+	extends androidx.appcompat.app.AppCompatActivity
 	implements
 		mono.android.IGCUserPeer,
 		android.animation.Animator.AnimatorListener
@@ -26,6 +26,14 @@ public class SplashActivity
 		super ();
 		if (getClass () == SplashActivity.class)
 			mono.android.TypeManager.Activate ("DailyNotes.Droid.SplashActivity, DailyNotes.Android", "", this, new java.lang.Object[] {  });
+	}
+
+
+	public SplashActivity (int p0)
+	{
+		super (p0);
+		if (getClass () == SplashActivity.class)
+			mono.android.TypeManager.Activate ("DailyNotes.Droid.SplashActivity, DailyNotes.Android", "System.Int32, mscorlib", this, new java.lang.Object[] { p0 });
 	}
 
 

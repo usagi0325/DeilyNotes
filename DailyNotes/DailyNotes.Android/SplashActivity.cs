@@ -1,6 +1,7 @@
 using Android.Animation;
 using Android.App;
 using Android.Content;
+using Android.OS;
 using AndroidX.AppCompat.App;
 using Com.Airbnb.Lottie;
 
@@ -9,18 +10,36 @@ namespace DailyNotes.Droid
     [Activity(Theme = "@style/Theme.Splash",
               MainLauncher = true,
               NoHistory = true)]
-    public class SplashActivity : Activity , Animator.IAnimatorListener
+    public class SplashActivity : AppCompatActivity, Animator.IAnimatorListener
     {
+        LottieAnimationView animationView;
+        //public override void OnCreate(Bundle savedInstanceState, PersistableBundle persistentState)
+        //{
+        //    base.OnCreate(savedInstanceState, persistentState);
+        //    SetContentView(Resource.Layout.Activity_Splash);
+        //    setup();
+        //}
+
         // Launches the startup task
         protected override void OnResume()
         {
             base.OnResume();
-            StartActivity(new Intent(Application.Context, typeof(MainActivity)));
-            //SetContentView(Resource.Layout.Activity_Splash);
-
-            //var animationView = FindViewById(Resource.Id.animation_view);
-
+            SetContentView(Resource.Layout.Activity_Splash);
+            setup();
+            //StartActivity(new Intent(Application.Context, typeof(MainActivity)));
         }
+        /// <summary>
+        /// アニメーションセットアップ
+        /// </summary>
+        public void setup()
+        {
+            animationView = FindViewById<LottieAnimationView>(Resource.Id.animation_view);
+            animationView.AddAnimatorListener(this);
+            // アニメーションの繰り返し回数（1回なら0）
+            animationView.RepeatCount = 0;
+            animationView.PlayAnimation();
+        }
+
 
         public void OnAnimationCancel(Animator animation)
         {

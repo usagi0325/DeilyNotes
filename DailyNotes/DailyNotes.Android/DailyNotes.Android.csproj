@@ -137,39 +137,6 @@
     <AndroidAsset Include="Assets\Walkthrough\FullScreen.json" />
     <AndroidAsset Include="Assets\Walkthrough\Walkthrough.json" />
     <AndroidAsset Include="Assets\9squares-AlBoardman.json" />
-    <AndroidAsset Include="Assets\Belo Foggy.json" />
-    <AndroidAsset Include="Assets\City.json" />
-    <AndroidAsset Include="Assets\Dash.json" />
-    <AndroidAsset Include="Assets\EmptyState.json" />
-    <AndroidAsset Include="Assets\HamburgerArrow.json" />
-    <AndroidAsset Include="Assets\Hello World.json" />
-    <AndroidAsset Include="Assets\JesseIntro.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Animated Graph.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - ATM.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Beating Heart.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Camera.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Countdown.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Shock.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Tongue.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Emoji Wink.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Favorite Star.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Gears.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Loading 1.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Loading 2.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Loading 3.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Loading 4.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Mail Sent.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Octopus.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Play and Like It.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Postcard.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Preloader.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Progress Success.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Retweet.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Star Wars Rey.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Tadah Image.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Tadah Video.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Touch ID.json" />
-    <AndroidAsset Include="Assets\lottiefiles.com - Video Camera.json" />
     <AndroidAsset Include="Assets\LottieLogo1.json" />
     <AndroidAsset Include="Assets\LottieLogo2.json" />
     <AndroidAsset Include="Assets\MotionCorpse-Jrcanest.json" />
@@ -219,9 +186,7 @@
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Activity_Splash.xml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Resources\Id\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <AndroidAsset Include="Assets\Images\WeAccept\img_0.png" />
   </ItemGroup>
