@@ -8,8 +8,10 @@
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
+        <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
+        <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
     </ContentPage.ToolbarItems>
-    
+
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
         <Label Text="Welcome to Xamarin Forms and Prism!" />
         <Button Text="テストボタン" Command="{Binding ShowSettingCommand}"/>
@@ -18,6 +20,4 @@
             <Label Text="{Binding testMozi2.Value}" />
         </StackLayout>
     </StackLayout>
-    
-
 </ContentPage>

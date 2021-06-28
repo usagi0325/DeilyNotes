@@ -19,6 +19,8 @@ namespace DailyNotes.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            SetTheme(Resource.Style.MainTheme);
+
             // グローバル状態のすべての設定を定義
             base.OnCreate(savedInstanceState);
 

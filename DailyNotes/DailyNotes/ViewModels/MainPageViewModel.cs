@@ -38,6 +38,7 @@ namespace DailyNotes.ViewModels
             {
                 Console.WriteLine("ボタンが押されたよ");
                 await NavigationService.NavigateAsync(typeof(SettingView).Name);
+                
             }).AddTo(Disposable);
 
         }

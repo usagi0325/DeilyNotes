@@ -20,7 +20,7 @@ namespace DailyNotes
         {
             InitializeComponent();
 
-            await NavigationService.NavigateAsync(typeof(MainPage).Name);
+            await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
         protected override void RegisterTypes(IContainerRegistry containerRegistry)
