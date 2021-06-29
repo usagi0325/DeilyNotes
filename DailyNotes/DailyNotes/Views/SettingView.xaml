@@ -4,14 +4,67 @@
              xmlns:local="clr-namespace:DailyNotes.ViewModels"
              x:Class="DailyNotes.Views.SettingView"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+             xmlns:localimage="clr-namespace:DailyNotes;assembly=DailyNotes"
              prism:ViewModelLocator.AutowireViewModel="True"
+             
              Title="設定画面">
-    <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-        <Label Text="Welcome to Xamarin Forms and Prism!" />
-        <Button Text="テストボタン" Command="{Binding ShowSettingCommand}"/>
-        <Label Text="{Binding testMozi.Value}"/>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="{Binding testMozi2.Value}" />
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="Auto"/>
+        </Grid.ColumnDefinitions>
+        <Frame Grid.Row="0"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"
+               BorderColor="Gray" 
+               CornerRadius="3" 
+               Padding="20"
+               Margin="5,5,5,0">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{localimage:ImageResource DailyNotes.Images.licence.png}" 
+                       WidthRequest="25" 
+                       HeightRequest="25"
+                       HorizontalOptions="Start"/>
+                <Label Text="ライセンス"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Image Source="{localimage:ImageResource DailyNotes.Images.left_icon.png}" 
+                       WidthRequest="25" 
+                       HeightRequest="25"
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+        </Frame>
+        <Frame Grid.Row="1"
+               Grid.Column="0"
+               Grid.ColumnSpan="3"
+               BorderColor="Gray" 
+               CornerRadius="3" 
+               Padding="20"
+               Margin="5,0,5,5">
+            <StackLayout Orientation="Horizontal">
+                <Image Source="{localimage:ImageResource DailyNotes.Images.attention.png}" 
+                       WidthRequest="25" 
+                       HeightRequest="25"
+                       HorizontalOptions="Start"/>
+                <Label Text="利用規約"
+                       FontSize="Medium"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Start"/>
+                <Image Source="{localimage:ImageResource DailyNotes.Images.left_icon.png}" 
+                       WidthRequest="25" 
+                       HeightRequest="25"
+                       HorizontalOptions="EndAndExpand"/>
+            </StackLayout>
+        </Frame>
+        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Gray"/>
+            <Label Text="テストラベル"/>
+            <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Gray"/>
         </StackLayout>
-    </StackLayout>
+    </Grid>
 </ContentPage>
