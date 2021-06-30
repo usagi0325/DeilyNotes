@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "BrgzCyBtQQwtK/ZpPjbH+c0Ug/vUSTO3BB94cgSUR7xeibSQ8rsfeash+brxnh/7zbQjaV8OXeDuZGFWvorvaA==",
+  "dgSpecHash": "AvFLuMHfbRcmkr5TztWEqKXMDhG0g1J7CanvJqs0pLXnOPzOmnnLCcPKsYE2nQzgDH9oyEr21Tk8kJ9Nk/X9bw==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
   "expectedPackageFiles": [
@@ -13,7 +13,14 @@
     "C:\\Users\\usagi\\.nuget\\packages\\prism.unity.forms\\8.0.0.1909\\prism.unity.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty\\7.11.0\\reactiveproperty.7.11.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty.core\\7.11.0\\reactiveproperty.core.7.11.0.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\sqlite-net-pcl\\1.7.335\\sqlite-net-pcl.1.7.335.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.3\\sqlitepclraw.bundle_green.2.0.3.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\sqlitepclraw.core\\2.0.3\\sqlitepclraw.core.2.0.3.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\sqlitepclraw.lib.e_sqlite3\\2.0.3\\sqlitepclraw.lib.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\sqlitepclraw.provider.e_sqlite3\\2.0.3\\sqlitepclraw.provider.e_sqlite3.2.0.3.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\system.memory\\4.5.3\\system.memory.4.5.3.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.reactive\\5.0.0\\system.reactive.5.0.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\system.runtime\\4.3.0\\system.runtime.4.3.0.nupkg.sha512",

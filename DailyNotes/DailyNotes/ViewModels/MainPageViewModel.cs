@@ -9,6 +9,7 @@ using Reactive.Bindings;
 using System.ComponentModel;
 using Reactive.Bindings.Extensions;
 using DailyNotes.Views;
+using DailyNotes.Service;
 
 namespace DailyNotes.ViewModels
 {
@@ -41,6 +42,8 @@ namespace DailyNotes.ViewModels
                 
             }).AddTo(Disposable);
 
+            SqlAccess.DBCreate();
+            SqlAccess.DBInsert();
         }
 
         
