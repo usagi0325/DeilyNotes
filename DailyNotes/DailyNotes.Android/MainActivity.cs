@@ -7,6 +7,7 @@ using Prism.Ioc;
 namespace DailyNotes.Droid
 {
     [Activity(Theme = "@style/MainTheme",
+              Label = "DailyNotes",
               ConfigurationChanges = ConfigChanges.ScreenSize | 
                                    　ConfigChanges.Orientation | 
                                    　ConfigChanges.UiMode | 

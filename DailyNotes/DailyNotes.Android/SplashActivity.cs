@@ -9,6 +9,7 @@ namespace DailyNotes.Droid
 {
     [Activity(Theme = "@style/Theme.Splash",
               MainLauncher = true,
+              Label = "DailyNotes",
               NoHistory = true)]
     public class SplashActivity : AppCompatActivity, Animator.IAnimatorListener
     {

@@ -10,6 +10,8 @@ using System.ComponentModel;
 using Reactive.Bindings.Extensions;
 using DailyNotes.Views;
 using DailyNotes.Service;
+using System.Collections.ObjectModel;
+using DailyNotes.Models;
 
 namespace DailyNotes.ViewModels
 {
@@ -27,6 +29,8 @@ namespace DailyNotes.ViewModels
 
         public ReactiveProperty<string> testMozi2 { get; set; } = new ReactiveProperty<string>();
 
+        ObservableCollection<SettingModel> TestCollection { get; set; } = new ObservableCollection<SettingModel>();
+
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
         {
@@ -34,6 +38,13 @@ namespace DailyNotes.ViewModels
             Title = "メイン画面";
 
             testMozi2.Value = "テストバインディング";
+
+            TestCollection= new ObservableCollection<SettingModel>()
+            {
+                new SettingModel(){Id = 1, SwitchState = true, Symbol="TEST"},
+                new SettingModel(){Id = 2,SwitchState = true, Symbol="TEST2"},
+                new SettingModel(){Id = 3, SwitchState = false, Symbol="TEST3"}
+            };
 
             ShowSettingCommand.Subscribe(async _ =>
             {

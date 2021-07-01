@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.appname">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.yukiusagi.dailynotes" android:installLocation="auto">
   <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="29" />
   <uses-permission android:name="android.permission.INTERNET" />
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="@string/app_name" android:icon="@mipmap/icon" android:name="crc645ca98e28ea21ac69.MainApplication" android:theme="@style/MainTheme" android:allowBackup="true" android:debuggable="true" android:extractNativeLibs="true">
-    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:theme="@style/MainTheme" android:name="crc645ca98e28ea21ac69.MainActivity" />
-    <activity android:noHistory="true" android:theme="@style/Theme.Splash" android:name="crc645ca98e28ea21ac69.SplashActivity">
+    <activity android:configChanges="orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:label="DailyNotes" android:theme="@style/MainTheme" android:name="crc645ca98e28ea21ac69.MainActivity" />
+    <activity android:label="DailyNotes" android:noHistory="true" android:theme="@style/Theme.Splash" android:name="crc645ca98e28ea21ac69.SplashActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />
@@ -17,17 +17,17 @@
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.EnergySaverBroadcastReceiver" />
     <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64a0e0a82d0db9a07d.ConnectivityBroadcastReceiver" />
     <activity android:configChanges="orientation|screenSize" android:name="crc64a0e0a82d0db9a07d.IntermediateActivity" />
-    <provider android:authorities="com.companyname.appname.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
+    <provider android:authorities="com.yukiusagi.dailynotes.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="xamarin.essentials.fileProvider">
       <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/xamarin_essentials_fileprovider_file_paths" />
     </provider>
     <activity android:configChanges="orientation|screenSize" android:name="crc64a0e0a82d0db9a07d.WebAuthenticatorIntermediateActivity" />
     <receiver android:enabled="true" android:exported="false" android:name="crc643f46942d9dd1fff9.PowerSaveModeBroadcastReceiver" />
-    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.appname.mono.MonoRuntimeProvider.__mono_init__" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.yukiusagi.dailynotes.mono.MonoRuntimeProvider.__mono_init__" />
     <!--suppress ExportedReceiver-->
     <receiver android:name="mono.android.Seppuku">
       <intent-filter>
         <action android:name="mono.android.intent.action.SEPPUKU" />
-        <category android:name="mono.android.intent.category.SEPPUKU.com.companyname.appname" />
+        <category android:name="mono.android.intent.category.SEPPUKU.com.yukiusagi.dailynotes" />
       </intent-filter>
     </receiver>
   </application>

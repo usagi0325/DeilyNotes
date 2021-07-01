@@ -2,8 +2,8 @@
 	.section	.rodata.env.str.1,"aMS",@progbits,1
 	.type	.L.env.str.1, @object
 .L.env.str.1:
-	.asciz	"com.companyname.appname"
-	.size	.L.env.str.1, 24
+	.asciz	"com.yukiusagi.dailynotes"
+	.size	.L.env.str.1, 25
 	.section	.data.application_config,"aw",@progbits
 	.type	application_config, @object
 	.p2align	2
@@ -71,7 +71,7 @@ mono_aot_mode_name:
 	.section	.rodata.env.str.8,"aMS",@progbits,1
 	.type	.L.env.str.8, @object
 .L.env.str.8:
-	.asciz	"4590f076-7c96-496a-b461-c731d80fa6fd"
+	.asciz	"d8cd7829-8e1e-4f4f-9f83-69a0ca6dfbbe"
 	.size	.L.env.str.8, 37
 	.section	.rodata.env.str.9,"aMS",@progbits,1
 	.type	.L.env.str.9, @object
