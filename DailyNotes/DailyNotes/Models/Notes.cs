@@ -17,8 +17,8 @@ namespace DailyNotes.Models
         [MaxLength(1024)]
         public string NoteContents { get; set; }
 
-        public bool SwitchState { get; set; }
+        public DateTime InputDateTime { get; set; }
 
-        public DateTime InputDateTime {get; set;}
+        public bool Done { get; set; }
     }
 }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DailyNotes.Views.NoteAddView">
+  <ContentView.Content>
+      <StackLayout Margin="20"
+                   VerticalOptions="StartAndExpand">
+          <Label Text="Hello Xamarin.Forms!" />
+            <Label Text="名前"/>
+
+            <Button Text="登録"
+                    Command="{Binding NoteSubmitCommand}"/>
+            <Button Text="削除"
+                    Command="{Binding NoteDeleteCommand}"/>
+            <Button Text="キャンセル"
+                    Command="{Binding CancelCommand}"/>
+        </StackLayout>
+  </ContentView.Content>
+</ContentView>
