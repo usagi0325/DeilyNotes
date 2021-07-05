@@ -8,12 +8,18 @@
              Title="{Binding Title}">
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
+        <ToolbarItem Text="追加" Order="Primary" Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
+        <ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
     </ContentPage.ToolbarItems>
     <ListView ItemsSource="{Binding TestCollection}">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <Label Text="{Binding TestCollection}"/>
+                    <StackLayout>
+                        <Label Text="{Binding Id}"/>
+                        <Label Text="{Binding NoteName}"/>
+                        <Label Text="{Binding NoteContents}"/>
+                    </StackLayout>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>

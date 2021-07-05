@@ -30,6 +30,7 @@ namespace DailyNotes
             containerRegistry.RegisterForNavigation<NavigationPage>();
             containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
             containerRegistry.RegisterForNavigation<SettingView, SettingViewModel>();
+            containerRegistry.RegisterForNavigation<NoteAddView, NoteAddViewModel>();
         }
     }
 }

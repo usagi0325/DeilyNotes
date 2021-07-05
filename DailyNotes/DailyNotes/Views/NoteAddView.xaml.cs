@@ -9,8 +9,7 @@ using Xamarin.Forms.Xaml;
 
 namespace DailyNotes.Views
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class NoteAddView : ContentView
+    public partial class NoteAddView : ContentPage
     {
         public NoteAddView()
         {

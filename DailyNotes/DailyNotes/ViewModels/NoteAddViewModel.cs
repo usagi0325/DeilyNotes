@@ -12,24 +12,53 @@ using DailyNotes.Views;
 using DailyNotes.Service;
 using System.Collections.ObjectModel;
 using DailyNotes.Models;
+using DailyNotes.Data;
+using System.Threading.Tasks;
 
 namespace DailyNotes.ViewModels
 {
     public class NoteAddViewModel : ViewModelBase
     {
+        public ReactiveProperty<string> Name { get; } = new ReactiveProperty<string>();
+
+        public ReactiveProperty<string> Contents { get; } = new ReactiveProperty<string>();
+
+        public ReactiveProperty<DateTime> Input { get; } = new ReactiveProperty<DateTime>();
+
+        public ReactiveProperty<bool> IsDone { get; } = new ReactiveProperty<bool>();
+
         /// <summary>
         /// 登録ボタン
         /// </summary>
-        AsyncReactiveCommand NoteSubmitCommand { get; } = new AsyncReactiveCommand();
+        public AsyncReactiveCommand NoteSubmitCommand { get; } = new AsyncReactiveCommand();
 
         /// <summary>
         /// 削除ボタン
         /// </summary>
-        AsyncReactiveCommand NoteDeleteCommand { get; } = new AsyncReactiveCommand();
+        public AsyncReactiveCommand NoteDeleteCommand { get; } = new AsyncReactiveCommand();
+
 
         /// <summary>
         /// 名前
         /// </summary>
         public ReactiveCommand<string> name { get; set; } = new ReactiveCommand<string>();
+
+        public NoteAddViewModel(INavigationService navigationService) : base(navigationService)
+        {
+            NoteSubmitCommand.Subscribe(async _ =>
+            {
+                Notes notes = new Notes { NoteName = Name.Value, NoteContents = Contents.Value, InputDateTime = Input.Value, Done = IsDone.Value };
+
+                NotesDatabase notesDatabase = await NotesDatabase.Instance;
+                // 入力内容を保存
+                await notesDatabase.SaveNoteAsync(notes);
+            }).AddTo(Disposable);
+
+            NoteDeleteCommand.Subscribe(async _ =>
+            {
+                await Task.Delay(10);
+                Console.WriteLine("押されました");
+            });
+        }
     }
 }

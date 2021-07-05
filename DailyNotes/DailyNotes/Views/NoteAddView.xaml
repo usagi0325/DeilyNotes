@@ -1,19 +1,29 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="DailyNotes.Views.NoteAddView">
-  <ContentView.Content>
-      <StackLayout Margin="20"
+             x:Class="DailyNotes.Views.NoteAddView"
+             xmlns:local="clr-namespace:DailyNotes.ViewModels"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+             prism:ViewModelLocator.AutowireViewModel="True"
+             >
+  <ContentPage.Content>
+        <StackLayout Margin="20"
                    VerticalOptions="StartAndExpand">
-          <Label Text="Hello Xamarin.Forms!" />
             <Label Text="名前"/>
+            <Entry Text="{Binding Name.Value}"/>
+            <Label Text="本文"/>
+            <Entry Text="{Binding Contents.Value}"/>
+            <Label Text="日時"/>
+            <DatePicker Date="{Binding Input.Value}"/>
+            <Label Text="Done"/>
+            <Switch IsToggled="{Binding IsDone.Value}"/>
 
             <Button Text="登録"
-                    Command="{Binding NoteSubmitCommand}"/>
+                    Command="{Binding NoteSubmitCommand, Mode=TwoWay}"/>
             <Button Text="削除"
                     Command="{Binding NoteDeleteCommand}"/>
             <Button Text="キャンセル"
                     Command="{Binding CancelCommand}"/>
         </StackLayout>
-  </ContentView.Content>
-</ContentView>
+  </ContentPage.Content>
+</ContentPage>

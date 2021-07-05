@@ -14,7 +14,7 @@ namespace DailyNotes.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\NoteAddView.xaml")]
-    public partial class NoteAddView : global::Xamarin.Forms.ContentView {
+    public partial class NoteAddView : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
