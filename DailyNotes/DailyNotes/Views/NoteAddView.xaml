@@ -9,13 +9,13 @@
   <ContentPage.Content>
         <StackLayout Margin="20"
                    VerticalOptions="StartAndExpand">
-            <Label Text="名前"/>
-            <Entry Text="{Binding Name.Value}"/>
-            <Label Text="本文"/>
-            <Entry Text="{Binding Contents.Value}"/>
-            <Label Text="日時"/>
-            <DatePicker Date="{Binding Input.Value}"/>
-            <Label Text="Done"/>
+            <Label Text="名前" TextColor="Black"/>
+            <Entry Text="{Binding Name.Value}" TextColor="Black"/>
+            <Label Text="本文" TextColor="Black"/>
+            <Entry Text="{Binding Contents.Value}" TextColor="Black"/>
+            <Label Text="日時" TextColor="Black"/>
+            <DatePicker Date="{Binding Input.Value}" TextColor="Black"/>
+            <Label Text="Done" TextColor="Black"/>
             <Switch IsToggled="{Binding IsDone.Value}"/>
 
             <Button Text="登録"

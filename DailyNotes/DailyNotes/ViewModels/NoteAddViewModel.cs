@@ -52,6 +52,12 @@ namespace DailyNotes.ViewModels
                 NotesDatabase notesDatabase = await NotesDatabase.Instance;
                 // 入力内容を保存
                 await notesDatabase.SaveNoteAsync(notes);
+
+                await App.Current.MainPage.DisplayAlert("確認", "データベースに保存されました" ,"OK");
+
+                // メインページに戻る
+                await NavigationService.GoBackAsync();
+
             }).AddTo(Disposable);
 
             NoteDeleteCommand.Subscribe(async _ =>

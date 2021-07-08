@@ -33,13 +33,6 @@ namespace DailyNotes.ViewModels
         /// </summary>
         public AsyncReactiveCommand GetDBCommand { get; } = new AsyncReactiveCommand();
 
-        /// <summary>
-        /// テストReactivePropaty 
-        /// </summary>
-        public ReactiveProperty<string> testMozi { get; set; } = new ReactiveProperty<string>("こんばんわ");
-
-        public ReactiveProperty<string> testMozi2 { get; set; } = new ReactiveProperty<string>();
-
         public ObservableCollection<Notes> TestCollection { get; set; } = new ObservableCollection<Notes>();
 
         public MainPageViewModel(INavigationService navigationService)
@@ -48,7 +41,15 @@ namespace DailyNotes.ViewModels
             // タイトルの設定
             Title = "メイン画面";
 
-            testMozi2.Value = "テストバインディング";
+            TestCollection = new ObservableCollection<Notes>()
+                    {
+                        new Notes() { Id = 999 ,
+                                      NoteName = "テストだよ",
+                                      NoteContents = "テストテストテストテスト",
+                                      Done = true}
+                    };
+
+
 
             ShowSettingCommand.Subscribe(async _ =>
             {
@@ -61,23 +62,18 @@ namespace DailyNotes.ViewModels
                 await NavigationService.NavigateAsync(typeof(NoteAddView).Name);
             }).AddTo(Disposable);
 
-
             GetDBCommand.Subscribe(async _ =>
             {
                 NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
                 var lists = await notesDatabase.GetNotesAsync();
+                // 一度現在のコレクションを消す
+                TestCollection.Clear();
 
                 foreach (var list in lists)
                 {
-                    TestCollection = new ObservableCollection<Notes>()
-                    {
-                        new Notes() { Id = list.Id , 
-                                      NoteName = list.NoteName,
-                                      NoteContents = list.NoteContents,
-                                      InputDateTime = list.InputDateTime,
-                                      Done = list.Done}
-                    };
+                    // DBの値をコレクションに代入
+                    TestCollection.Add(list);
                 }
                 TestCollection.ToCollectionChanged();
             });

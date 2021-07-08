@@ -11,15 +11,19 @@
         <ToolbarItem Text="追加" Order="Primary" Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
         <ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
     </ContentPage.ToolbarItems>
-    <ListView ItemsSource="{Binding TestCollection}">
+    <ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" RowHeight="100" Margin="10">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
-                    <StackLayout>
-                        <Label Text="{Binding Id}"/>
-                        <Label Text="{Binding NoteName}"/>
-                        <Label Text="{Binding NoteContents}"/>
-                    </StackLayout>
+                    <Frame CornerRadius="10" BackgroundColor="Pink" Margin="5">
+                        <StackLayout Orientation="Horizontal">
+                            <Label Text="{Binding Id}" FontSize="Medium" TextColor="Black"/>
+                            <Label Text="{Binding NoteName}" FontSize="Medium"/>
+                            <Label Text="{Binding NoteContents}" FontSize="Medium"/>
+                            <Label Text="{Binding InputDateTime}" FontSize="Medium"/>
+                            <Label Text="IsDone" IsEnabled="{Binding Done}"  FontSize="Medium"/>
+                        </StackLayout>
+                    </Frame>
                 </ViewCell>
             </DataTemplate>
         </ListView.ItemTemplate>
