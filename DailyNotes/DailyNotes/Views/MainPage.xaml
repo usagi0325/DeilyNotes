@@ -11,7 +11,7 @@
         <ToolbarItem Text="追加" Order="Primary" Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
         <ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
     </ContentPage.ToolbarItems>
-    <ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" RowHeight="100" Margin="10">
+    <ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" HasUnevenRows="True" ItemSelected="ListView_ItemSelected">
         <ListView.ItemTemplate>
             <DataTemplate>
                 <ViewCell>
