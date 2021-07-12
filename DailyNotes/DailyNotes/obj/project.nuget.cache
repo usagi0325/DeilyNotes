@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "AvFLuMHfbRcmkr5TztWEqKXMDhG0g1J7CanvJqs0pLXnOPzOmnnLCcPKsYE2nQzgDH9oyEr21Tk8kJ9Nk/X9bw==",
+  "dgSpecHash": "s1/Oiu5l/I2F0TdkDSml61GLZkt+ECYzEmmmFHBxanxmzjcVaUgEksbYq2QuWGntMEOYUFi7v+mTvmi3NUB6jg==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes\\DailyNotes.csproj",
   "expectedPackageFiles": [
@@ -31,7 +31,8 @@
     "C:\\Users\\usagi\\.nuget\\packages\\unity.container\\5.11.8\\unity.container.5.11.8.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
-    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512"
+    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms.behaviorspack\\3.0.0\\xamarin.forms.behaviorspack.3.0.0.nupkg.sha512"
   ],
   "logs": []
 }

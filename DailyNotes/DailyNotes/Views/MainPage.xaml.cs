@@ -10,17 +10,5 @@ namespace DailyNotes.Views
         {
             InitializeComponent();
         }
-
-        /// <summary>
-        /// しぶしぶコードビヘイビアに書きます・・・
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void ListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            var item = (Notes)e.SelectedItem;
-
-            DisplayAlert("ItemSelected", item.Id.ToString(), "Ok");
-        }
     }
 }

@@ -43,26 +43,7 @@ namespace DailyNotes.ViewModels
 
         public ObservableCollection<Notes> TestCollection { get; set; } = new ObservableCollection<Notes>();
 
-        ReactiveProperty<bool> _selectedItem;
-        public ReactiveProperty<bool> SelectedItem
-        {
-            get
-            {
-                return _selectedItem;
-            }
-            set
-            {
-                _selectedItem = value;
-
-                if (_selectedItem == null)
-                {
-                    return;
-                }
-                SelectedItemCommand.Execute(_selectedItem);
-
-                SelectedItem = null;
-            }
-        }
+        public ReactiveProperty<bool> SelectedItem { get; set; } = new ReactiveProperty<bool>();
 
         public MainPageViewModel(INavigationService navigationService)
             : base(navigationService)
@@ -105,9 +86,18 @@ namespace DailyNotes.ViewModels
 
             });
 
-            SelectedItemCommand.Subscribe(async _ =>
-            {
-                await NavigationService.NavigateAsync(typeof(NoteAddView).Name);
+            SelectedItemCommand.Subscribe(async TestCollection =>
+            {  
+                var navigationParameters = new NavigationParameters();
+                navigationParameters.Add("Collection", TestCollection);
+                //{
+                //    {"Id" , TestCollection.Select(x => x.Id)},
+                //    { "NoteName" , TestCollection.Select(x => x.NoteName)},
+                //    { "NoteContents" , TestCollection.Select(x => x.NoteContents)},
+                //    { "InputDateTime", DateTime.Now },
+                //    { "Done" , true}
+                //};
+                await NavigationService.NavigateAsync(typeof(NoteAddView).Name , navigationParameters);
             }).AddTo(Disposable);
         }
 

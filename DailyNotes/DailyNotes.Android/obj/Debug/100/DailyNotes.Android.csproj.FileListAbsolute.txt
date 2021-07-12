@@ -631,3 +631,4 @@ C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Deb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.BehaviorsPack.dll

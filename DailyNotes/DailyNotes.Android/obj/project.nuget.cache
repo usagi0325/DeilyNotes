@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "/KI/M8fMcRsKScVsRlBl6Aty/bxSomLLK4vJAosrqOFzKzYM70Y00ZeRUEu+nzhsjcCIr1OiypfxnCJk640MgQ==",
+  "dgSpecHash": "cr/ooUpLlEr5FGZyyFYD6F/Xo1sRrXeCoFYsCb7uCKAnfmNLD8y5nh3mAzWlx6iJT6OZyLOqVUtTydBPyWhm0Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.Android\\DailyNotes.Android.csproj",
   "expectedPackageFiles": [
@@ -74,6 +74,7 @@
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms\\5.0.0.2012\\xamarin.forms.5.0.0.2012.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms.behaviorspack\\3.0.0\\xamarin.forms.behaviorspack.3.0.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.google.android.material\\1.2.1.1\\xamarin.google.android.material.1.2.1.1.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.google.guava.listenablefuture\\1.0.0.2\\xamarin.google.guava.listenablefuture.1.0.0.2.nupkg.sha512"
   ],
