@@ -11,12 +11,14 @@
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
-            <RowDefinition Height="Auto"/>
-        </Grid.RowDefinitions>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="Auto"/>
-            <ColumnDefinition Width="Auto"/>
-        </Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
         <Frame Grid.Row="0"
                Grid.Column="0"
                Grid.ColumnSpan="3"
@@ -39,32 +41,36 @@
                        HorizontalOptions="EndAndExpand"/>
             </StackLayout>
         </Frame>
-        <Frame Grid.Row="1"
+		<Frame Grid.Row="1"
                Grid.Column="0"
                Grid.ColumnSpan="3"
                BorderColor="Gray" 
                CornerRadius="3" 
                Padding="20"
                Margin="5,0,5,5">
-            <StackLayout Orientation="Horizontal">
-                <Image Source="{localimage:ImageResource DailyNotes.Images.attention.png}" 
+			<StackLayout Orientation="Horizontal">
+				<Image Source="{localimage:ImageResource DailyNotes.Images.attention.png}" 
                        WidthRequest="25" 
                        HeightRequest="25"
                        HorizontalOptions="Start"/>
-                <Label Text="利用規約"
+				<Label Text="利用規約"
                        FontSize="Medium"
                        FontAttributes="Bold"
                        HorizontalOptions="Start"/>
-                <Image Source="{localimage:ImageResource DailyNotes.Images.left_icon.png}" 
+				<Image Source="{localimage:ImageResource DailyNotes.Images.left_icon.png}" 
                        WidthRequest="25" 
                        HeightRequest="25"
                        HorizontalOptions="EndAndExpand"/>
-            </StackLayout>
-        </Frame>
-        <StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
+			</StackLayout>
+		</Frame>
+		<StackLayout Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3">
             <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Gray"/>
             <Label Text="テストラベル"/>
             <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Gray"/>
         </StackLayout>
-    </Grid>
+		<Button Text="テストボタン1" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="0" Command="{Binding test1}"></Button>
+		<Button Text="テストボタン2" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="1" Command="{Binding test2}"></Button>
+		<Button Text="テストボタン3" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="2" Command="{Binding test3}"></Button>
+		<Button Text="テストボタン4" WidthRequest="120" HeightRequest="120" Grid.Row="4" Grid.Column="0" Command="{Binding test4}"></Button>
+	</Grid>
 </ContentPage>

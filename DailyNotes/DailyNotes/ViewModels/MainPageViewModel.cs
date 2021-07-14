@@ -34,6 +34,8 @@ namespace DailyNotes.ViewModels
         /// </summary>
         public AsyncReactiveCommand GetDBCommand { get; } = new AsyncReactiveCommand();
 
+
+
         ReactiveProperty<bool> selected { get; set; } = new ReactiveProperty<bool>(false);
 
         /// <summary>
@@ -51,17 +53,6 @@ namespace DailyNotes.ViewModels
             // タイトルの設定
             Title = "メイン画面";
 
-            // 画面表示にDBを読み込む
-            Task.Run(async () =>
-            {
-                NotesDatabase notesDatabase = await NotesDatabase.Instance;
-
-                var lists = await notesDatabase.GetNotesAsync();
-                // 一度現在のコレクションを消す
-                TestCollection.Clear();
-                lists.ForEach(x => TestCollection.Add(x));
-                TestCollection.ToCollectionChanged();
-            });
             ShowSettingCommand.Subscribe(async _ =>
             {
                 await NavigationService.NavigateAsync(typeof(SettingView).Name);
@@ -87,7 +78,7 @@ namespace DailyNotes.ViewModels
             });
 
             SelectedItemCommand.Subscribe(async TestCollection =>
-            {  
+            {
                 var navigationParameters = new NavigationParameters();
                 navigationParameters.Add("Collection", TestCollection);
                 //{
@@ -97,10 +88,21 @@ namespace DailyNotes.ViewModels
                 //    { "InputDateTime", DateTime.Now },
                 //    { "Done" , true}
                 //};
-                await NavigationService.NavigateAsync(typeof(NoteAddView).Name , navigationParameters);
+                await NavigationService.NavigateAsync(typeof(NoteAddView).Name, navigationParameters);
             }).AddTo(Disposable);
         }
+        public override void OnNavigatedTo(INavigationParameters parameters)
+        {
+            Task.Run(async () =>
+            {
+                NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
-
+                var lists = await notesDatabase.GetNotesAsync();
+                // 一度現在のコレクションを消す
+                TestCollection.Clear();
+                lists.ForEach(x => TestCollection.Add(x));
+                TestCollection.ToCollectionChanged();
+            });
+        }
     }
 }

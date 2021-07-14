@@ -19,6 +19,7 @@ namespace DailyNotes.ViewModels
 {
 	public class NoteAddViewModel : ViewModelBase
 	{
+		public ReactiveProperty<int> Id { get; } = new ReactiveProperty<int>();
 		public ReactiveProperty<string> Name { get; } = new ReactiveProperty<string>();
 
 		public ReactiveProperty<string> Contents { get; } = new ReactiveProperty<string>();
@@ -49,7 +50,11 @@ namespace DailyNotes.ViewModels
 		{
 			NoteSubmitCommand.Subscribe(async _ =>
 			{
-				Notes notes = new Notes { NoteName = Name.Value, NoteContents = Contents.Value, InputDateTime = Input.Value, Done = IsDone.Value };
+				Notes notes = new Notes { Id = Id.Value, 
+										  NoteName = Name.Value, 
+										  NoteContents = Contents.Value, 
+										  InputDateTime = Input.Value, 
+										  Done = IsDone.Value };
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 				// 入力内容を保存
@@ -64,8 +69,20 @@ namespace DailyNotes.ViewModels
 
 			NoteDeleteCommand.Subscribe(async _ =>
 			{
-				await Task.Delay(10);
-				Console.WriteLine("押されました");
+				// 削除対象
+				Notes notes = new Notes { Id = Id.Value, 
+										  NoteName = Name.Value, 
+										  NoteContents = Contents.Value, 
+										  InputDateTime = Input.Value, 
+										  Done = IsDone.Value };
+
+				NotesDatabase notesDatabase = await NotesDatabase.Instance;
+
+				await notesDatabase.DeleteNoteAsync(notes);
+
+				await App.Current.MainPage.DisplayAlert("確認", "データベースから削除されました", "OK");
+
+				await NavigationService.GoBackAsync();
 			});
 		}
 		public override void OnNavigatedTo(INavigationParameters parameters)
@@ -74,6 +91,7 @@ namespace DailyNotes.ViewModels
 
 			var notes = parameters.GetValue<Notes>("Collection");
 
+			Id.Value = notes.Id;
 			Name.Value = notes.NoteName;
 			Contents.Value = notes.NoteContents;
 			Input.Value = notes.InputDateTime;

@@ -234,6 +234,7 @@ C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Deb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.AndroidX.ViewPager2.pdb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Essentials.dll
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Essentials.pdb
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.BehaviorsPack.dll
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.Core.dll
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.Core.pdb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.Platform.Android.dll
@@ -631,4 +632,3 @@ C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Deb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_GenerateJavaStubs.stamp
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_GeneratePackageManagerJava.stamp
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\stamp\_ResolveLibraryProjectImports.stamp
-C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.Android\obj\Debug\100\android\assets\Xamarin.Forms.BehaviorsPack.dll
