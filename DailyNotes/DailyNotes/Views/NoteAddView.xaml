@@ -5,25 +5,50 @@
              xmlns:local="clr-namespace:DailyNotes.ViewModels"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
              prism:ViewModelLocator.AutowireViewModel="True"
+             Title="ノート追加画面"
              >
   <ContentPage.Content>
-        <StackLayout Margin="20"
-                   VerticalOptions="StartAndExpand">
-            <Label Text="名前" TextColor="Black"/>
-            <Entry Text="{Binding Name.Value}" TextColor="Black"/>
-            <Label Text="本文" TextColor="Black"/>
-            <Entry Text="{Binding Contents.Value}" TextColor="Black"/>
-            <Label Text="日時" TextColor="Black"/>
-            <DatePicker Date="{Binding Input.Value}" TextColor="Black"/>
-            <Label Text="Done" TextColor="Black"/>
-            <Switch IsToggled="{Binding IsDone.Value}"/>
+		<Grid Margin="20">
+			<Grid.RowDefinitions>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+				<RowDefinition Height="Auto"/>
+			</Grid.RowDefinitions>
+			<Grid.ColumnDefinitions>
+				<ColumnDefinition Width="Auto"/>
+			</Grid.ColumnDefinitions>
+			<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
+				<StackLayout>
+					<Label Text="名前" TextColor="Black"/>
+					<Entry Text="{Binding Name.Value}" TextColor="Black"/>
+				</StackLayout>
+			</Frame>
+			<Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
+				<StackLayout>
+					<Label Text="本文" TextColor="Black" />
+					<Entry Text="{Binding Contents.Value}"  />
+				</StackLayout>
+			</Frame>
+			<Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
+				<StackLayout>
+					<Label Text="ロックをかけますか？" TextColor="Black"/>
+					<Switch IsToggled="{Binding IsDone.Value}" Margin="0"/>
+					<Label Text="パスワード" TextColor="Black" IsVisible="{Binding IsDone.Value}"/>
+					<Entry IsPassword="True" IsVisible="{Binding IsDone.Value}"/>
+				</StackLayout>
+			</Frame>
 
-            <Button Text="登録"
-                    Command="{Binding NoteSubmitCommand, Mode=TwoWay}"/>
+			<Button Text="登録"
+                    Command="{Binding NoteSubmitCommand, Mode=TwoWay}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="50" CornerRadius="30"/>
             <Button Text="削除"
-                    Command="{Binding NoteDeleteCommand}"/>
-            <Button Text="キャンセル"
-                    Command="{Binding CancelCommand}"/>
-        </StackLayout>
-  </ContentPage.Content>
+                    Command="{Binding NoteDeleteCommand}" Grid.Row="6" Grid.Column="0"/>
+			<Button Text="キャンセル"
+                    Command="{Binding CancelCommand}" Grid.Row="7" Grid.Column="0"/>
+		</Grid>
+	</ContentPage.Content>
 </ContentPage>

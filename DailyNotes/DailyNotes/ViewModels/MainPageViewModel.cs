@@ -34,7 +34,10 @@ namespace DailyNotes.ViewModels
         /// </summary>
         public AsyncReactiveCommand GetDBCommand { get; } = new AsyncReactiveCommand();
 
-
+        /// <summary>
+        /// リフレッシュの状態
+        /// </summary>
+        ReactiveProperty<bool> IsRefreshing { get; set; } = new ReactiveProperty<bool>(false);
 
         ReactiveProperty<bool> selected { get; set; } = new ReactiveProperty<bool>(false);
 
@@ -66,6 +69,7 @@ namespace DailyNotes.ViewModels
 
             GetDBCommand.Subscribe(async _ =>
             {
+                IsRefreshing.Value = true;
                 NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
                 var lists = await notesDatabase.GetNotesAsync();
@@ -74,6 +78,10 @@ namespace DailyNotes.ViewModels
 
                 lists.ForEach(x => TestCollection.Add(x));
                 TestCollection.ToCollectionChanged();
+
+                await Task.Delay(10000);
+
+                IsRefreshing.Value = false;
 
             });
 

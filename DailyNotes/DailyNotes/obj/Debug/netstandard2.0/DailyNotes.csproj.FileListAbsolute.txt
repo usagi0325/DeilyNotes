@@ -10,6 +10,9 @@ C:\Users\usagi\source\repos\DailyNotes\DailyNotes\DailyNotes\obj\Debug\netstanda
 C:\Users\usagi\source\repos\DailyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\usagi\source\repos\DailyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.dll
 C:\Users\usagi\source\repos\DailyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.pdb
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.deps.json
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.dll
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.pdb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\AppShell.xaml.g.cs
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\Views\AboutPage.xaml.g.cs
@@ -23,10 +26,6 @@ C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netst
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.AssemblyInfoInputs.cache
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.AssemblyInfo.cs
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.csproj.CoreCompileInputs.cache
-C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.deps.json
-C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.dll
-C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\bin\Debug\netstandard2.0\DailyNotes.pdb
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.dll
 C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.pdb
-C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes\obj\Debug\netstandard2.0\DailyNotes.csprojAssemblyReference.cache
