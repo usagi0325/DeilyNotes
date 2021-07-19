@@ -8,12 +8,16 @@
     <None Remove="Images\attention.png" />
     <None Remove="Images\left_icon.png" />
     <None Remove="Images\licence.png" />
+    <None Remove="Images\SaveIcon.png" />
+    <None Remove="Images\TrashIcon.png" />
   </ItemGroup>
 
   <ItemGroup>
     <EmbeddedResource Include="Images\attention.png" />
     <EmbeddedResource Include="Images\left_icon.png" />
     <EmbeddedResource Include="Images\licence.png" />
+    <EmbeddedResource Include="Images\SaveIcon.png" />
+    <EmbeddedResource Include="Images\TrashIcon.png" />
   </ItemGroup>
 
   <ItemGroup>

@@ -6,7 +6,6 @@
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
              xmlns:localimage="clr-namespace:DailyNotes;assembly=DailyNotes"
              prism:ViewModelLocator.AutowireViewModel="True"
-             
              Title="設定画面">
     <Grid>
         <Grid.RowDefinitions>

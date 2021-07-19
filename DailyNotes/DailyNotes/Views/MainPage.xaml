@@ -11,41 +11,42 @@
 		<ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
 		<ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
 	</ContentPage.ToolbarItems>
-	<StackLayout>
+	<AbsoluteLayout>
 		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
 			      HasUnevenRows="True" 
 				  IsPullToRefreshEnabled="True" 
 				  RefreshCommand="{Binding GetDBCommand, Mode=TwoWay}" 
-				  IsRefreshing="{Binding IsRefreshing.Value}">
-			<ListView.ItemTemplate>
-				<DataTemplate>
-					<ViewCell>
-						<Frame CornerRadius="10" BackgroundColor="Pink" Margin="5">
-							<StackLayout Orientation="Horizontal">
-								<Label Text="{Binding Id}" FontSize="Medium" TextColor="Black"/>
-								<Label Text="{Binding NoteName}" FontSize="Medium"/>
-								<Label Text="{Binding NoteContents}" FontSize="Medium"/>
-								<Label Text="{Binding InputDateTime}" FontSize="Medium"/>
-								<Label Text="IsDone" IsEnabled="{Binding Done}"  FontSize="Medium"/>
-							</StackLayout>
-						</Frame>
-					</ViewCell>
-				</DataTemplate>
-			</ListView.ItemTemplate>
-			<ListView.Behaviors>
-			<behaviorsPack:SelectedItemBehavior Command="{Binding SelectedItemCommand}"/>
-			</ListView.Behaviors>
-		</ListView>
-		<Button Text="+" 
+				  IsRefreshing="{Binding IsRefreshing.Value}"
+				  AbsoluteLayout.LayoutFlags="PositionProportional"
+				  AbsoluteLayout.LayoutBounds="0.5, 0.5 , AutoSize, AutoSize"
+				  >
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Frame CornerRadius="10" BackgroundColor="Pink" Margin="5">
+								<StackLayout Orientation="Horizontal">
+									<Label Text="{Binding Id}" FontSize="Medium" TextColor="Black"/>
+									<Label Text="{Binding NoteName}" FontSize="Medium"/>
+									<Label Text="{Binding NoteContents}" FontSize="Medium"/>
+									<Label Text="{Binding InputDateTime}" FontSize="Medium"/>
+									<Label Text="IsDone" IsEnabled="{Binding Done}"  FontSize="Medium"/>
+								</StackLayout>
+							</Frame>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+				<ListView.Behaviors>
+					<behaviorsPack:SelectedItemBehavior Command="{Binding SelectedItemCommand}"/>
+				</ListView.Behaviors>
+			</ListView>
+			<Button Text="+"
 				TextColor="White"
 				FontSize="Large"
-				CornerRadius="60" 
-				HeightRequest="70" 
-				WidthRequest="70" 
-				HorizontalOptions="End" 
-				Margin="0,0,10,20" 
-				BackgroundColor="#ffa500" 
+				CornerRadius="50"
+				BackgroundColor="#ffa500"
 				Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"
-				></Button>
-	</StackLayout>
+				AbsoluteLayout.LayoutFlags="PositionProportional"
+				AbsoluteLayout.LayoutBounds=".95,.95,80,80"
+				/>
+	</AbsoluteLayout>
 </ContentPage>

@@ -4,10 +4,19 @@
              x:Class="DailyNotes.Views.NoteAddView"
              xmlns:local="clr-namespace:DailyNotes.ViewModels"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+			 xmlns:localimage="clr-namespace:DailyNotes;assembly=DailyNotes"
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="ノート追加画面"
              >
-  <ContentPage.Content>
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Order="Primary" 
+					 IconImageSource="{localimage:ImageResource DailyNotes.Images.SaveIcon.png}"
+					 Command="{Binding NoteSubmitCommand, Mode=TwoWay}"/>
+		<ToolbarItem Order="Primary" 
+					 IconImageSource="{localimage:ImageResource DailyNotes.Images.TrashIcon.png}" 
+					 Command="{Binding NoteDeleteCommand, Mode=TwoWay}"/>
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
 		<Grid Margin="20">
 			<Grid.RowDefinitions>
 				<RowDefinition Height="Auto"/>
@@ -23,23 +32,27 @@
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 			<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
-				<StackLayout>
-					<Label Text="名前" TextColor="Black"/>
-					<Entry Text="{Binding Name.Value}" TextColor="Black"/>
+				<StackLayout Orientation="Horizontal">
+					<Label Text="名前" TextColor="Black" VerticalOptions="Center"/>
+					<Entry Text="{Binding Name.Value}" TextColor="Black" HorizontalOptions="FillAndExpand"/>
 				</StackLayout>
 			</Frame>
 			<Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
-				<StackLayout>
-					<Label Text="本文" TextColor="Black" />
-					<Entry Text="{Binding Contents.Value}"  />
+				<StackLayout Orientation="Horizontal">
+					<Label Text="本文" TextColor="Black" VerticalOptions="Center"/>
+					<Editor Text="{Binding Contents.Value}" HorizontalOptions="FillAndExpand"/>
 				</StackLayout>
 			</Frame>
 			<Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
-				<StackLayout>
-					<Label Text="ロックをかけますか？" TextColor="Black"/>
-					<Switch IsToggled="{Binding IsDone.Value}" Margin="0"/>
-					<Label Text="パスワード" TextColor="Black" IsVisible="{Binding IsDone.Value}"/>
-					<Entry IsPassword="True" IsVisible="{Binding IsDone.Value}"/>
+				<StackLayout Orientation="Vertical">
+					<StackLayout Orientation="Horizontal">
+					<Label Text="ロックをかけますか？" TextColor="Black" VerticalOptions="Center"/>
+					<Switch IsToggled="{Binding IsDone.Value}" Margin="0" HorizontalOptions="FillAndExpand"/>
+					</StackLayout>
+					<StackLayout Orientation="Horizontal">
+					<Label Text="パスワード" TextColor="Black" IsVisible="{Binding IsDone.Value}" VerticalOptions="Center"/>
+					<Entry IsPassword="True" IsVisible="{Binding IsDone.Value}" HorizontalOptions="FillAndExpand"/>
+					</StackLayout>
 				</StackLayout>
 			</Frame>
 
