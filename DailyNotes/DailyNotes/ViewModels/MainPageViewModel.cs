@@ -37,9 +37,10 @@ namespace DailyNotes.ViewModels
         /// <summary>
         /// リフレッシュの状態
         /// </summary>
-        ReactiveProperty<bool> IsRefreshing { get; set; } = new ReactiveProperty<bool>(false);
+        public ReactiveProperty<bool> IsRefreshing { get; set; } = new ReactiveProperty<bool>(false);
 
-        ReactiveProperty<bool> selected { get; set; } = new ReactiveProperty<bool>(false);
+
+        ReactiveProperty<bool> IsPullToRefreshEnabled { get; set; } = new ReactiveProperty<bool>(true);
 
         /// <summary>
         /// 一覧を選択した時のコマンド
@@ -78,8 +79,6 @@ namespace DailyNotes.ViewModels
 
                 lists.ForEach(x => TestCollection.Add(x));
                 TestCollection.ToCollectionChanged();
-
-                await Task.Delay(10000);
 
                 IsRefreshing.Value = false;
 

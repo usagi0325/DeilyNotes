@@ -11,19 +11,19 @@
 		<ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
 		<ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
 	</ContentPage.ToolbarItems>
-	<AbsoluteLayout>
-		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
+
+	<AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+
+			<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
 			      HasUnevenRows="True" 
 				  IsPullToRefreshEnabled="True" 
-				  RefreshCommand="{Binding GetDBCommand, Mode=TwoWay}" 
-				  IsRefreshing="{Binding IsRefreshing.Value}"
-				  AbsoluteLayout.LayoutFlags="PositionProportional"
-				  AbsoluteLayout.LayoutBounds="0.5, 0.5 , AutoSize, AutoSize"
+				  RefreshCommand="{Binding GetDBCommand}" 
+				  IsRefreshing="{Binding IsRefreshing.Value, Mode=TwoWay}"
 				  >
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
-							<Frame CornerRadius="10" BackgroundColor="Pink" Margin="5">
+							<Frame CornerRadius="10" BorderColor="White" BackgroundColor="LightBlue" Margin="5">
 								<StackLayout Orientation="Horizontal">
 									<Label Text="{Binding Id}" FontSize="Medium" TextColor="Black"/>
 									<Label Text="{Binding NoteName}" FontSize="Medium"/>
