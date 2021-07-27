@@ -14,6 +14,9 @@ using System.Collections.ObjectModel;
 using DailyNotes.Models;
 using DailyNotes.Data;
 using System.Threading.Tasks;
+using Xamarin.Forms;
+using Xamarin.Essentials;
+using DailyNotes.Interface;
 
 namespace DailyNotes.ViewModels
 {
@@ -37,6 +40,8 @@ namespace DailyNotes.ViewModels
 		/// 削除ボタン
 		/// </summary>
 		public AsyncReactiveCommand NoteDeleteCommand { get; } = new AsyncReactiveCommand();
+
+		public AsyncReactiveCommand PermissionCheck { get; } = new AsyncReactiveCommand();
 
 		public ObservableCollection<Notes> TestCollection { get; set; } = new ObservableCollection<Notes>();
 
@@ -83,6 +88,18 @@ namespace DailyNotes.ViewModels
 				await App.Current.MainPage.DisplayAlert("確認", "データベースから削除されました", "OK");
 
 				await NavigationService.GoBackAsync();
+			});
+
+			PermissionCheck.Subscribe(async _ =>
+			{
+				var readWritePermission = DependencyService.Get<IReadWritePermission>();
+
+				var status = await readWritePermission.CheckStatusAsync();
+
+				if (status != PermissionStatus.Granted)
+				{
+					status = await readWritePermission.RequestAsync();
+				}
 			});
 		}
 		public override void OnNavigatedTo(INavigationParameters parameters)

@@ -67,8 +67,8 @@
             <Label Text="テストラベル"/>
             <BoxView HeightRequest="2" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Color="Gray"/>
         </StackLayout>
-		<Button Text="テストボタン1" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="0" Command="{Binding test1}"></Button>
-		<Button Text="テストボタン2" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="1" Command="{Binding test2}"></Button>
+		<Button Text="権限確認" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="0" Command="{Binding test1, Mode=TwoWay}"></Button>
+		<Button Text="テストボタン2" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="1" Command="{Binding test2, Mode=TwoWay}"></Button>
 		<Button Text="テストボタン3" WidthRequest="120" HeightRequest="120" Grid.Row="3" Grid.Column="2" Command="{Binding test3}"></Button>
 		<Button Text="テストボタン4" WidthRequest="120" HeightRequest="120" Grid.Row="4" Grid.Column="0" Command="{Binding test4}"></Button>
 	</Grid>

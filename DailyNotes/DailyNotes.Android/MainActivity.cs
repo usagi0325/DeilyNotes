@@ -3,6 +3,10 @@ using Android.Content.PM;
 using Android.OS;
 using Prism;
 using Prism.Ioc;
+using Xamarin.Forms;
+using DailyNotes.Interface;
+using DailyNotes.Droid;
+using Xamarin.Essentials;
 
 namespace DailyNotes.Droid
 {
@@ -28,9 +32,16 @@ namespace DailyNotes.Droid
             // 初期化処理
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
 
+
             LoadApplication(new App(new AndroidInitializer()));
         }
 
+        /// <summary>
+        /// 権限の結果を返す
+        /// </summary>
+        /// <param name="requestCode"></param>
+        /// <param name="permissions"></param>
+        /// <param name="grantResults"></param>
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
@@ -43,6 +54,8 @@ namespace DailyNotes.Droid
     {
         public void RegisterTypes(IContainerRegistry containerRegistry)
         {
+
+            DependencyService.Register<IReadWritePermission, Permission.ReadWriteStoragePermission>();
             // Register any platform specific implementations
         }
     }

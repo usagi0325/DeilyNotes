@@ -13,8 +13,7 @@
 	</ContentPage.ToolbarItems>
 
 	<AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
-
-			<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
+		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
 			      HasUnevenRows="True" 
 				  IsPullToRefreshEnabled="True" 
 				  RefreshCommand="{Binding GetDBCommand}" 
@@ -36,7 +35,7 @@
 					</DataTemplate>
 				</ListView.ItemTemplate>
 				<ListView.Behaviors>
-					<behaviorsPack:SelectedItemBehavior Command="{Binding SelectedItemCommand}"/>
+					<behaviorsPack:SelectedItemBehavior Command="{Binding SelectedItemCommand, Mode=TwoWay}"/>
 				</ListView.Behaviors>
 			</ListView>
 			<Button Text="+"

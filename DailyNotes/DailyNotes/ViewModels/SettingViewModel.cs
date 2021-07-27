@@ -9,6 +9,9 @@ using Reactive.Bindings;
 using System.ComponentModel;
 using Reactive.Bindings.Extensions;
 using DailyNotes.Views;
+using Xamarin.Forms;
+using DailyNotes.Interface;
+using Xamarin.Essentials;
 
 namespace DailyNotes.ViewModels
 {
@@ -37,8 +40,13 @@ namespace DailyNotes.ViewModels
 
 			test1.Subscribe(async _ =>
 			{
-				await NavigationService.NavigateAsync(typeof(AboutPage).Name);
+				var readWritePermission = DependencyService.Get<IReadWritePermission>();
 
+				var status = await readWritePermission.CheckStatusAsync();
+
+				if(status != PermissionStatus.Granted){
+					status = await readWritePermission.RequestAsync();
+				}
 			}).AddTo(Disposable);
 
 			test2.Subscribe(async _ =>

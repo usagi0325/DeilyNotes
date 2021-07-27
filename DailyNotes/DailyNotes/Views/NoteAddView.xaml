@@ -46,22 +46,17 @@
 			<Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
 				<StackLayout Orientation="Vertical">
 					<StackLayout Orientation="Horizontal">
-					<Label Text="ロックをかけますか？" TextColor="Black" VerticalOptions="Center"/>
-					<Switch IsToggled="{Binding IsDone.Value}" Margin="0" HorizontalOptions="FillAndExpand"/>
+						<Label Text="ロックをかけますか？" TextColor="Black" VerticalOptions="Center"/>
+						<Switch IsToggled="{Binding IsDone.Value}" Margin="0" HorizontalOptions="FillAndExpand"/>
 					</StackLayout>
 					<StackLayout Orientation="Horizontal">
-					<Label Text="パスワード" TextColor="Black" IsVisible="{Binding IsDone.Value}" VerticalOptions="Center"/>
-					<Entry IsPassword="True" IsVisible="{Binding IsDone.Value}" HorizontalOptions="FillAndExpand"/>
+						<Label Text="パスワード" TextColor="Black" IsVisible="{Binding IsDone.Value}" VerticalOptions="Center"/>
+						<Entry IsPassword="True" IsVisible="{Binding IsDone.Value}" HorizontalOptions="FillAndExpand"/>
 					</StackLayout>
 				</StackLayout>
 			</Frame>
-
-			<Button Text="登録"
-                    Command="{Binding NoteSubmitCommand, Mode=TwoWay}" Grid.Row="5" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="50" CornerRadius="30"/>
-            <Button Text="削除"
-                    Command="{Binding NoteDeleteCommand}" Grid.Row="6" Grid.Column="0"/>
-			<Button Text="キャンセル"
-                    Command="{Binding CancelCommand}" Grid.Row="7" Grid.Column="0"/>
+			<Button Text="権限✓"
+                    Command="{Binding PermissionCheck}" Grid.Row="7" Grid.Column="0"/>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>
