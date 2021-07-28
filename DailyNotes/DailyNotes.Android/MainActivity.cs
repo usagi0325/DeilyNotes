@@ -7,6 +7,9 @@ using Xamarin.Forms;
 using DailyNotes.Interface;
 using DailyNotes.Droid;
 using Xamarin.Essentials;
+using System.Threading.Tasks;
+using Android.Content;
+using System.IO;
 
 namespace DailyNotes.Droid
 {
@@ -19,6 +22,8 @@ namespace DailyNotes.Droid
                                    　ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
+        internal static MainActivity Instance{ get; private set; }    
+
         protected override void OnCreate(Bundle savedInstanceState)
         {
             TabLayoutResource = Resource.Layout.Tabbar;
@@ -28,6 +33,8 @@ namespace DailyNotes.Droid
 
             // グローバル状態のすべての設定を定義
             base.OnCreate(savedInstanceState);
+
+            Instance = this;
 
             // 初期化処理
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
@@ -48,7 +55,39 @@ namespace DailyNotes.Droid
 
             base.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
-    }
+        
+        //↓画像選択に関する処理
+        public static readonly int PickImageId = 1000;
+
+        /// <summary>
+        /// タスクの完了状態
+        /// </summary>
+        public TaskCompletionSource<Stream> PickImageTaskCompletionSource { set; get; }
+
+		protected override void OnActivityResult(int requestCode, Result resultCode, Intent intent)
+		{
+			base.OnActivityResult(requestCode, resultCode, intent);
+
+            if(requestCode == PickImageId)
+            {
+                if((resultCode == Result.Ok) && (intent != null))
+                {
+                    Android.Net.Uri uri = intent.Data;
+
+                    Stream stream = ContentResolver.OpenInputStream(uri);
+
+                    PickImageTaskCompletionSource.SetResult(stream);
+				}
+                else
+                {
+                    PickImageTaskCompletionSource.SetResult(null);
+
+				}
+
+			}
+
+		}
+	}
 
     public class AndroidInitializer : IPlatformInitializer
     {
@@ -56,6 +95,7 @@ namespace DailyNotes.Droid
         {
 
             DependencyService.Register<IReadWritePermission, Permission.ReadWriteStoragePermission>();
+            DependencyService.Register<IPhotoPickerService, Service.PhotoPickerService>();
             // Register any platform specific implementations
         }
     }

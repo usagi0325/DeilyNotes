@@ -17,6 +17,7 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Essentials;
 using DailyNotes.Interface;
+using System.IO;
 
 namespace DailyNotes.ViewModels
 {
@@ -31,6 +32,7 @@ namespace DailyNotes.ViewModels
 
 		public ReactiveProperty<bool> IsDone { get; } = new ReactiveProperty<bool>();
 
+
 		/// <summary>
 		/// 登録ボタン
 		/// </summary>
@@ -42,6 +44,8 @@ namespace DailyNotes.ViewModels
 		public AsyncReactiveCommand NoteDeleteCommand { get; } = new AsyncReactiveCommand();
 
 		public AsyncReactiveCommand PermissionCheck { get; } = new AsyncReactiveCommand();
+
+		public AsyncReactiveCommand ImageSelection { get; } = new AsyncReactiveCommand();
 
 		public ObservableCollection<Notes> TestCollection { get; set; } = new ObservableCollection<Notes>();
 
@@ -99,6 +103,17 @@ namespace DailyNotes.ViewModels
 				if (status != PermissionStatus.Granted)
 				{
 					status = await readWritePermission.RequestAsync();
+				}
+			});
+
+			ImageSelection.Subscribe(async _ =>
+			{
+				Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
+				if(stream != null)
+				{
+					Image image = null;
+					image.Source = ImageSource.FromStream(() => stream);
+					
 				}
 			});
 		}
