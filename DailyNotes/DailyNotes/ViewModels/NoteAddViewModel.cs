@@ -18,6 +18,7 @@ using Xamarin.Forms;
 using Xamarin.Essentials;
 using DailyNotes.Interface;
 using System.IO;
+using Android.Graphics;
 
 namespace DailyNotes.ViewModels
 {
@@ -62,8 +63,8 @@ namespace DailyNotes.ViewModels
 				Notes notes = new Notes { Id = Id.Value, 
 										  NoteName = Name.Value, 
 										  NoteContents = Contents.Value, 
-										  InputDateTime = Input.Value, 
-										  Done = IsDone.Value };
+										  InputDateTime = Input.Value,
+									      IsPassWord = IsDone.Value };
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 				// 入力内容を保存
@@ -82,8 +83,8 @@ namespace DailyNotes.ViewModels
 				Notes notes = new Notes { Id = Id.Value, 
 										  NoteName = Name.Value, 
 										  NoteContents = Contents.Value, 
-										  InputDateTime = Input.Value, 
-										  Done = IsDone.Value };
+										  InputDateTime = Input.Value,
+										  IsPassWord = IsDone.Value };
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
@@ -111,8 +112,9 @@ namespace DailyNotes.ViewModels
 				Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
 				if(stream != null)
 				{
-					Image image = null;
-					image.Source = ImageSource.FromStream(() => stream);
+					long a = stream.Length;
+					//Image img = null;	
+					//img.Source = ImageSource.FromStream(() => stream);
 					
 				}
 			});
@@ -127,7 +129,7 @@ namespace DailyNotes.ViewModels
 			Name.Value = notes.NoteName;
 			Contents.Value = notes.NoteContents;
 			Input.Value = notes.InputDateTime;
-			IsDone.Value = notes.Done;
+			IsDone.Value = notes.IsPassWord;
 		}
 	}
 }
