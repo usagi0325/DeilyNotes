@@ -88,13 +88,6 @@ namespace DailyNotes.ViewModels
             {
                 var navigationParameters = new NavigationParameters();
                 navigationParameters.Add("Collection", TestCollection);
-                //{
-                //    {"Id" , TestCollection.Select(x => x.Id)},
-                //    { "NoteName" , TestCollection.Select(x => x.NoteName)},
-                //    { "NoteContents" , TestCollection.Select(x => x.NoteContents)},
-                //    { "InputDateTime", DateTime.Now },
-                //    { "Done" , true}
-                //};
                 await NavigationService.NavigateAsync(typeof(NoteAddView).Name, navigationParameters);
             }).AddTo(Disposable);
         }

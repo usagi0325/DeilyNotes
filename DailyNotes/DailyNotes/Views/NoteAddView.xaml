@@ -32,16 +32,15 @@
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 			<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
-				<StackLayout Orientation="Horizontal">
-					<Label Text="名前" TextColor="Black" VerticalOptions="Center"/>
-					<Entry Text="{Binding Name.Value}" TextColor="Black" HorizontalOptions="FillAndExpand"/>
+				<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+					<Image Source="{localimage:ImageResource DailyNotes.Images.ImageSelectIcon.png}" HeightRequest="50" WidthRequest="50" />
 				</StackLayout>
+				<Frame.GestureRecognizers>
+					<TapGestureRecognizer Command="{Binding ImageSelection}"/>
+				</Frame.GestureRecognizers>
 			</Frame>
-			<Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
-				<StackLayout Orientation="Horizontal">
-					<Label Text="本文" TextColor="Black" VerticalOptions="Center"/>
-					<Editor Text="{Binding Contents.Value}" HorizontalOptions="FillAndExpand"/>
-				</StackLayout>
+			<Frame Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
+				<Editor Text="{Binding Contents.Value}" HorizontalOptions="FillAndExpand" AutoSize="TextChanges"/>
 			</Frame>
 			<Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
 				<StackLayout Orientation="Vertical">
@@ -55,10 +54,6 @@
 					</StackLayout>
 				</StackLayout>
 			</Frame>
-			<Button Text="権限✓"
-                    Command="{Binding PermissionCheck}" Grid.Row="6" Grid.Column="0"/>
-			<Button Text="画像を選択"
-					Command="{Binding ImageSelection}" Grid.Row="7" Grid.Column="0"/>
 		</Grid>
 	</ContentPage.Content>
 </ContentPage>
