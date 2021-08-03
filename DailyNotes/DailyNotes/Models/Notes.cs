@@ -47,8 +47,8 @@ namespace DailyNotes.Models
         public string PassWord { get; set; }
 
         /// <summary>
-        /// イメージのパス
+        /// イメージのバイト配列
         /// </summary>
-        public string ImageFilePath { get; set; }
+        public byte[] ImageByte { get; set; }
     }
 }

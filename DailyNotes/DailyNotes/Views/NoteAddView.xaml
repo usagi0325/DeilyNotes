@@ -5,9 +5,16 @@
              xmlns:local="clr-namespace:DailyNotes.ViewModels"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
 			 xmlns:localimage="clr-namespace:DailyNotes;assembly=DailyNotes"
+			 xmlns:con="clr-namespace:DailyNotes.Converter"
              prism:ViewModelLocator.AutowireViewModel="True"
              Title="ノート追加画面"
              >
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<con:ImageSourceFromByteArrayConverter x:Key="ImgFromByte"/>
+			<con:CBoolNegativeConverter x:Key="BoolInversion"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
 	<ContentPage.ToolbarItems>
 		<ToolbarItem Order="Primary" 
 					 IconImageSource="{localimage:ImageResource DailyNotes.Images.SaveIcon.png}"
@@ -33,7 +40,14 @@
 			</Grid.ColumnDefinitions>
 			<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
 				<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
-					<Image Source="{localimage:ImageResource DailyNotes.Images.ImageSelectIcon.png}" HeightRequest="50" WidthRequest="50" />
+					<Image Source="{localimage:ImageResource DailyNotes.Images.ImageSelectIcon.png}" 
+						   IsVisible="{Binding SelectedImage.Value , Converter={StaticResource BoolInversion}}"
+						   HeightRequest="50" 
+						   WidthRequest="50"/>
+					<Image Source="{Binding SelectImage.Value, Converter={StaticResource ImgFromByte}}" 
+						   IsVisible="{Binding SelectedImage.Value}" 
+						   HeightRequest="50" 
+						   WidthRequest="50"/>
 				</StackLayout>
 				<Frame.GestureRecognizers>
 					<TapGestureRecognizer Command="{Binding ImageSelection}"/>

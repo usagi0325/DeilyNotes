@@ -19,6 +19,7 @@ using Xamarin.Essentials;
 using DailyNotes.Interface;
 using System.IO;
 using Android.Graphics;
+using DailyNotes.Converter;
 
 namespace DailyNotes.ViewModels
 {
@@ -31,8 +32,12 @@ namespace DailyNotes.ViewModels
 
 		public ReactiveProperty<DateTime> Input { get; } = new ReactiveProperty<DateTime>();
 
-		public ReactiveProperty<bool> IsDone { get; } = new ReactiveProperty<bool>();
+		public ReactiveProperty<bool> IsPassWord { get; } = new ReactiveProperty<bool>();
 
+		public ReactiveProperty<byte[]>SelectImage { get;} = new ReactiveProperty<byte[]>();
+
+		public ReactiveProperty<bool> SelectedImage { get; } = new ReactiveProperty<bool>(false);
+ 
 
 		/// <summary>
 		/// 登録ボタン
@@ -64,7 +69,8 @@ namespace DailyNotes.ViewModels
 										  NoteName = Name.Value, 
 										  NoteContents = Contents.Value, 
 										  InputDateTime = Input.Value,
-									      IsPassWord = IsDone.Value };
+									      IsPassWord = IsPassWord.Value,
+										  ImageByte = SelectImage.Value};
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 				// 入力内容を保存
@@ -84,7 +90,9 @@ namespace DailyNotes.ViewModels
 										  NoteName = Name.Value, 
 										  NoteContents = Contents.Value, 
 										  InputDateTime = Input.Value,
-										  IsPassWord = IsDone.Value };
+										  IsPassWord = IsPassWord.Value,
+										  ImageByte = SelectImage.Value
+										  };
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
@@ -112,10 +120,10 @@ namespace DailyNotes.ViewModels
 				Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
 				if(stream != null)
 				{
-					long a = stream.Length;
-					//Image img = null;	
-					//img.Source = ImageSource.FromStream(() => stream);
-					
+					byte[] imageByte = StreamToByteConverter.StreamToByte(stream);
+
+					SelectImage.Value = imageByte;
+					SelectedImage.Value = true;
 				}
 			});
 		}
@@ -129,7 +137,16 @@ namespace DailyNotes.ViewModels
 			Name.Value = notes.NoteName;
 			Contents.Value = notes.NoteContents;
 			Input.Value = notes.InputDateTime;
-			IsDone.Value = notes.IsPassWord;
+			IsPassWord.Value = notes.IsPassWord;
+			SelectImage.Value = notes.ImageByte;
+
+
+			if(SelectImage.Value == null){
+				SelectedImage.Value = false;
+			}
+			else{
+				SelectedImage.Value = true;
+			}
 		}
 	}
 }
