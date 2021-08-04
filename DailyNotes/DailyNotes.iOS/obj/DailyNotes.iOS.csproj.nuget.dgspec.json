@@ -1,0 +1,69 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
+        "projectName": "DailyNotes.iOS",
+        "projectPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
+        "packagesPath": "C:\\Users\\usagi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\usagi\\source\\repos\\DailyNotes\\DailyNotes\\DailyNotes.iOS\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\usagi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "xamarinios10"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "xamarinios10": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "xamarinios10": {
+          "dependencies": {
+            "Prism.Unity.Forms": {
+              "target": "Package",
+              "version": "[8.0.0.1909, )"
+            },
+            "Xamarin.Essentials.Interfaces": {
+              "target": "Package",
+              "version": "[1.5.3.2, )"
+            },
+            "Xamarin.Forms": {
+              "target": "Package",
+              "version": "[4.8.0.1364, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

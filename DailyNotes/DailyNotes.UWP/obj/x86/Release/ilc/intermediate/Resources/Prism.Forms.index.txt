@@ -1,0 +1,2 @@
+Prism.Forms, Version=8.0.0.1909, Culture=neutral, PublicKeyToken=null
+  Prism.Properties.Resources.resources
