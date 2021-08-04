@@ -7,9 +7,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyNotes", "DailyNotes\Da
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyNotes.Android", "DailyNotes\DailyNotes.Android\DailyNotes.Android.csproj", "{D59BF6C1-9CCD-4BFD-ADE3-FD0B2946EC77}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyNotes.iOS", "..\..\..\source\repos\DailyNotes\DailyNotes\DailyNotes.iOS\DailyNotes.iOS.csproj", "{7196FB85-EDA2-466B-A40C-D5B4F321B2AD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyNotes.iOS", "DailyNotes\DailyNotes.iOS\DailyNotes.iOS.csproj", "{7196FB85-EDA2-466B-A40C-D5B4F321B2AD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyNotes.UWP", "..\..\..\source\repos\DailyNotes\DailyNotes\DailyNotes.UWP\DailyNotes.UWP.csproj", "{FFBD919E-6B6C-4C00-AA9D-21C02088C091}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DailyNotes.UWP", "DailyNotes\DailyNotes.UWP\DailyNotes.UWP.csproj", "{FFBD919E-6B6C-4C00-AA9D-21C02088C091}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
