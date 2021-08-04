@@ -18,13 +18,17 @@ namespace DailyNotes.ViewModels
 	public class SettingViewModel : ViewModelBase
 	{
 
-		public AsyncReactiveCommand test1 { get; } = new AsyncReactiveCommand();
+		public AsyncReactiveCommand ShowTermsAndConditions { get; } = new AsyncReactiveCommand();
 
 		public AsyncReactiveCommand test2 { get; } = new AsyncReactiveCommand();
 
 		public AsyncReactiveCommand test3 { get; } = new AsyncReactiveCommand();
 
 		public AsyncReactiveCommand test4 { get; } = new AsyncReactiveCommand();
+
+		public ReactiveProperty<string> AppName { get; } = new ReactiveProperty<string>();
+
+		public ReactiveProperty<string> AppVersion { get; } = new ReactiveProperty<string>();
 
 
 		public SettingViewModel()
@@ -38,15 +42,11 @@ namespace DailyNotes.ViewModels
 			// タイトルの設定
 			Title = "設定画面";
 
-			test1.Subscribe(async _ =>
+			AppVersion.Value = "バージョン：" + AppInfo.VersionString;
+
+			ShowTermsAndConditions.Subscribe(async _ =>
 			{
-				var readWritePermission = DependencyService.Get<IReadWritePermission>();
-
-				var status = await readWritePermission.CheckStatusAsync();
-
-				if(status != PermissionStatus.Granted){
-					status = await readWritePermission.RequestAsync();
-				}
+				await NavigationService.NavigateAsync(typeof(TermsAndConditionsView).Name);
 			}).AddTo(Disposable);
 
 			test2.Subscribe(async _ =>

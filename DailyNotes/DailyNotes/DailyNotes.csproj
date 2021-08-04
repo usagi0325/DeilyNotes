@@ -5,6 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Remove="Resouces\TermsAndConditions.resx" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="Images\attention.png" />
     <None Remove="Images\ImageSelectIcon.png" />
     <None Remove="Images\left_icon.png" />
@@ -47,6 +51,9 @@
     <EmbeddedResource Update="Views\SettingView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
+    <EmbeddedResource Update="Views\TermsAndConditionsView.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
@@ -57,6 +64,13 @@
     <Reference Include="Mono.Android">
       <HintPath>..\..\..\..\..\..\..\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\ReferenceAssemblies\Microsoft\Framework\MonoAndroid\v10.0\Mono.Android.dll</HintPath>
     </Reference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resouces\TermsAndConditions.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TermsAndConditions.Designer.cs</LastGenOutput>
+    </Resource>
   </ItemGroup>
 
   <ItemGroup>
