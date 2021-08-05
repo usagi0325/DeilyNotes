@@ -3,12 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="DailyNotes.Views.TermsAndConditionsView"
              xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms"
-             prism:ViewModelLocator.AutowireViewModel="True">
+             xmlns:res="clr-namespace:DailyNotes.Resouces"
+             prism:ViewModelLocator.AutowireViewModel="True"
+             Title="{x:Static res:TermsAndCondition.TitleText}">
     <ContentPage.Content>
-        <StackLayout>
-			<Label Text=""
+		<StackLayout>
+			<ScrollView>
+				<Label Text="{x:Static res:TermsAndCondition.TermsAndConditionText}"
                 VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+                HorizontalOptions="CenterAndExpand"
+                FontSize="Medium"
+                Margin="10"/>
+			</ScrollView>
+		</StackLayout>
+	</ContentPage.Content>
 </ContentPage>

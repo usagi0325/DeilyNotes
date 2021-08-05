@@ -20,21 +20,8 @@ namespace DailyNotes.ViewModels
 
 		public AsyncReactiveCommand ShowTermsAndConditions { get; } = new AsyncReactiveCommand();
 
-		public AsyncReactiveCommand test2 { get; } = new AsyncReactiveCommand();
-
-		public AsyncReactiveCommand test3 { get; } = new AsyncReactiveCommand();
-
-		public AsyncReactiveCommand test4 { get; } = new AsyncReactiveCommand();
-
-		public ReactiveProperty<string> AppName { get; } = new ReactiveProperty<string>();
-
 		public ReactiveProperty<string> AppVersion { get; } = new ReactiveProperty<string>();
 
-
-		public SettingViewModel()
-		{
-
-		}
 		public SettingViewModel(INavigationService navigationService)
 			: base(navigationService)
 		{
@@ -48,28 +35,6 @@ namespace DailyNotes.ViewModels
 			{
 				await NavigationService.NavigateAsync(typeof(TermsAndConditionsView).Name);
 			}).AddTo(Disposable);
-
-			test2.Subscribe(async _ =>
-			{
-				await NavigationService.NavigateAsync(typeof(MainPage).Name);
-
-			}).AddTo(Disposable);
-
-			test3.Subscribe(async _ =>
-			{
-				await NavigationService.NavigateAsync(typeof(ItemsPage).Name);
-
-			}).AddTo(Disposable);
-
-			test4.Subscribe(async _ =>
-			{
-				await NavigationService.NavigateAsync(typeof(LoginPage).Name);
-
-			}).AddTo(Disposable);
-
-
-
-			Diapose();
 		}
 	}
 }

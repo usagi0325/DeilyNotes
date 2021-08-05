@@ -19,7 +19,6 @@
 		<ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
 		<ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
 	</ContentPage.ToolbarItems>
-
 	<AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
 		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
 			      HasUnevenRows="True" 

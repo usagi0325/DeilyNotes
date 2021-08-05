@@ -23,6 +23,7 @@
   </Dependencies>
   <Resources>
     <Resource Language="EN-US" />
+    <Resource Language="JA" />
   </Resources>
   <Applications>
     <Application Id="App" Executable="DailyNotes.UWP.exe" EntryPoint="App1.App">

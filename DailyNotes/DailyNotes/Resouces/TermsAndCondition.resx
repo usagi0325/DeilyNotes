@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="TermsAndConditionText" xml:space="preserve">
+    <value>These Terms of Use (hereinafter referred to as "Terms of Use") are referred to as _____ (hereinafter referred to as "Company").
+.. ) Use of the service provided on this website (hereinafter referred to as "this service")
+It sets the conditions. For registered users (hereinafter referred to as "users"), this book
+Please use this service in accordance with the terms.
+Article 1 (Applicable)
+1. This agreement applies to all relationships related to the use of this service between the user and our company.
+Suppose.
+2. Regarding this service, in addition to this agreement, various rules such as rules for use (hereinafter
+Below, it is called "individual regulation". ) May be done. These individual provisions have no name
+Regardless of this, it shall form part of this agreement.
+3. If the provisions of this agreement contradict the provisions of the individual provisions of the preceding article, special provisions will be made in the individual provisions.
+Unless otherwise specified, the provisions of the individual provisions shall prevail.
+Article 2 (Registration for use)
+4. In this service, the applicant for registration agrees to this agreement and uses it by the method specified by our company.
+Registration is completed by applying for registration and our company notifying the applicant for registration of this approval.
+You and shall.
+5. If we determine that the applicant for usage registration has the following reasons, we will approve the application for usage registration.
+In some cases, we shall not be obliged to disclose the reason.
+a. When false matters are reported when applying for usage registration
+b. When the application is from a person who has violated this agreement
+c. In addition, when we judge that the usage registration is not appropriate
+Article 3 (Management of user ID and password)
+6. The user properly manages the user ID and password of this service at his / her own risk.
+I shall make sense.
+7. In any case, the user transfers or lends the user ID and password to a third party.
+However, it cannot be shared with a third party. We have a user ID and password pair
+If the match is logged in with the same registration information, the user ID is registered.
+It is considered to be used by the user himself.
+8. Damage caused by the use of user ID and password by a third party is ours.
+The Company shall not be liable at all unless there is intentional or gross negligence.
+Article 4 (Usage fee and payment method)
+9. The user shall be separately determined by the Company as consideration for the paid part of this service and listed on this website.
+The usage fee shown shall be paid by the method specified by the Company.
+10. If the user delays the payment of the usage fee, the user will lose the delay at a rate of 14.6% per year.
+You shall pay the damage.
+Article 5 (Prohibited matters)
+The user must not do the following acts when using this service.
+11. Acts that violate laws or public order and morals
+12. Acts related to criminal acts
+13. Features of our company, other users of the Service, or third party servers or networks
+Acts of destroying or interfering
+14. Actions that may interfere with the operation of our services
+15. Acts of collecting or accumulating personal information about other users
+
+16. Unauthorized access or attempting this
+17. Acts of impersonating another user
+18. Acts that directly or indirectly benefit antisocial forces in connection with our services
+19. Intellectual property rights, portrait rights, privacy, name of our company, other users of this service or third parties
+Acts that infringe on honor or other rights or interests
+20. Posting or sending on this service the content that we judge to include or include the following expressions
+Act of believing
+Overly violent expression
+b. Explicit sexual expression
+c. Expressions that lead to discrimination based on race, nationality, beliefs, gender, social status, family origin, etc.
+d. Expressions that induce or encourage suicide, self-harm, or substance abuse
+e. Expressions that make others uncomfortable, including other antisocial content
+21. Actions that the Company determines to have or are intended for the following:
+Business, advertising, advertising, solicitation, and other commercial activities (excluding those approved by the Company)
+vinegar. )
+b. Acts aimed at sexual or obscene acts
+c. Acts aimed at meeting or dating an unfamiliar opposite sex
+d. Acts aimed at harassing or slandering other users
+e. Causes disadvantage, damage or discomfort to us, other users of the Service, or third parties
+Acts aimed at
+f. Other acts of using this service for a purpose different from the intended purpose of use of this service
+22. Religious activities or solicitations to religious groups
+23. Other acts that the Company deems inappropriate
+Article 6 (suspension of provision of this service, etc.)
+24. The Company shall not notify the user in advance if it determines that there is any of the following reasons.
+It is possible to suspend or suspend the provision of all or part of this service.
+When performing maintenance, inspection or updating of the computer system related to this service
+b. It is difficult to provide this service due to force majeure such as earthquakes, lightning strikes, fires, power outages or natural disasters.
+When becomes
+c. When the computer or communication line stops due to an accident
+d. In addition, when we judge that it is difficult to provide this service
+25. We would like the user or a third party to suffer due to the suspension or interruption of the provision of this service.
+We shall not be liable for any disadvantage or damage.
+Article 7 (copyright)
+26. The user owns the necessary intellectual property rights such as copyright, or obtains the permission of the necessary right holder.
+Use this service only for information such as obtained sentences, images and videos, and post or upload
+Suppose you can
+27. Writings, images, videos, etc. posted or uploaded by users using this service
+The right shall be reserved by the user or other existing right holder. However, this
+The company uses this service to post or upload texts, images, videos, etc.
+, Improvement of this service, improvement of quality, correction of deficiencies, etc. and publicity of this service, etc.
+It shall be possible to use it to the extent necessary for the user, and the user shall exercise the moral rights of the author regarding this use.
+It shall not be used.
+28. Except as provided in the main text of the preceding paragraph, regarding this service and all information related to this service.
+All copyrights and other intellectual property rights are the rights that we or our company have licensed to use.
+Reproduction, transfer, loan, translation, modification, reprint, public transmission (transmission possible)
+Includes activation. ), Transmission, distribution, publication, commercial use, etc. shall not be performed.
+
+Article 8 (Usage restrictions and deregistration)
+29. We will post data without prior notice if the user falls under any of the following:
+Delete and restrict the use of all or part of this service to the user or the user
+It is possible to cancel the registration as.
+a. Violation of any provision of these Terms
+b. If the registration is found to be false
+c. When the credit card notified by the user as a payment method is suspended.
+d. In case of default of payment obligations such as fees
+e. If you do not receive a response from us for a certain period of time
+f. When this service has not been used for a certain period of time since the last use
+g. In addition, when we judge that the use of this service is not appropriate
+30. If any of the items in the preceding paragraph is applicable, the user will naturally be liable for all debts to the Company.
+You lose the profit of the deadline, and you have to repay all the debts you incur at that time in a lump sum immediately.
+Must be.
+31. The Company shall be liable for any damages caused to the user due to the actions taken by the Company based on this article.
+I will not take charge.
+Article 9 (withdrawal)
+The user shall be able to withdraw from this service by the withdrawal procedure specified by the Company.
+Article 10 (Disclaimer of Warranty and Disclaimer)
+32. We have a de facto or legal defect in this service (safety, reliability, accuracy, completeness, existence).
+Efficacy, fitness for a particular purpose, security flaws, errors and bugs, infringement
+And so on. ) Is not guaranteed, either explicitly or implicitly.
+33. We are not responsible for any damage caused to the user due to this service.
+not. However, the contract between us and the user regarding this service (including this agreement)
+.. ) Is a consumer contract stipulated in the Consumer Contract Law, this disclaimer does not apply.
+34. Even in the case specified in the proviso of the preceding paragraph, the Company shall rely on the Company's negligence (excluding gross negligence).
+Loss caused by special circumstances among the damage caused to the user due to default or tort
+Harm (including cases where the Company or the user foresaw or could foresee the occurrence of damage)
+We do not take any responsibility for. In addition, debt due to our negligence (excluding gross negligence)
+Compensation for damages caused to the user due to default or tort will be caused by the user.
+The upper limit is the amount of usage fee received in the month of birth.
+35. The Company arises between a user and another user or a third party regarding this service.
+We are not responsible for any transactions, communications or disputes.
+Article 11 (Changes in service content, etc.)
+We will change the contents of this service or provide this service without notifying the user.
+It can be canceled and we are not responsible for any damage caused to the user by this.
+not here.
+Article 12 (Change of Terms of Service)
+We may change these Terms at any time without notifying the user if we deem it necessary.
+And can be done. If you start using this service after changing this agreement, please contact us.
+The user is deemed to have agreed to the changed terms.
+Article 13 (Handling of personal information)
+Regarding personal information acquired by using this service, we will refer to our "Privacy Policy".
+-"Will be handled appropriately.
+
+Article 14 (Notification or Contact)
+Notification or communication between the user and us shall be made by the method specified by us. This
+The company is currently registered unless the user notifies the change according to the method specified separately by the company.
+We consider the contact to be valid and notify or contact the contact, which will be sent to the user when making the call.
+It is considered to have arrived.
+Article 15 (Prohibition of transfer of rights and obligations)
+The user has the status under the usage contract or the right based on this agreement without the prior written consent of our company.
+Alternatively, the obligation cannot be transferred to a third party or pledged as collateral.
+Article 16 (Governing law / jurisdiction)
+36. In interpreting this agreement, Japanese law shall be the governing law.
+37. In the event of a dispute regarding this service, the court having jurisdiction over the location of our head office is exclusive.
+It will be the agreement jurisdiction.
+
+that's all</value>
+  </data>
+  <data name="TitleText" xml:space="preserve">
+    <value>TermsOfService</value>
+  </data>
+</root>

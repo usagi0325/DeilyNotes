@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:DailyNotes.ViewModels"
+             x:Class="DailyNotes.Views.ListPage"
+             xmlns:prism="clr-namespace:Prism.Mvvm;assembly=Prism.Forms" 
+			 xmlns:behaviorsPack="clr-namespace:Xamarin.Forms.BehaviorsPack;assembly=Xamarin.Forms.BehaviorsPack"
+			 xmlns:con="clr-namespace:DailyNotes.Converter"
+             prism:ViewModelLocator.AutowireViewModel="True"
+			 xmlns:localimage="clr-namespace:DailyNotes;assembly=DailyNotes"
+             Title="{Binding Title}">
+	<ContentPage.Resources>
+		<ResourceDictionary>
+			<con:ImageSourceFromByteArrayConverter x:Key="ImgFromByte"/>
+		</ResourceDictionary>
+	</ContentPage.Resources>
+
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
+		<ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
+	</ContentPage.ToolbarItems>
+	<AbsoluteLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
+			      HasUnevenRows="True" 
+				  IsPullToRefreshEnabled="True" 
+				  RefreshCommand="{Binding GetDBCommand}" 
+				  IsRefreshing="{Binding IsRefreshing.Value, Mode=TwoWay}"
+				  >
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Frame CornerRadius="10" BorderColor="Black" BackgroundColor="White" Margin="5">
+							<StackLayout Orientation="Vertical">
+								<Image Source="{localimage:ImageResource DailyNotes.Images.LockIcon.png}"
+										   WidthRequest="25"
+										   HeightRequest="25"
+										   HorizontalOptions="EndAndExpand"
+										   IsVisible="{Binding IsPassWord}"/>
+								<Image Source="{Binding ImageByte, Converter={StaticResource ImgFromByte}}"
+									   HeightRequest="200" 
+									   WidthRequest="250"
+									   HorizontalOptions="CenterAndExpand"/>
+								<Label Text="{Binding NoteContents}" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+								<Label Text="{Binding UpdateDateTime}" FontSize="Small" HorizontalOptions="EndAndExpand"/>
+							</StackLayout>
+						</Frame>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+			<ListView.Behaviors>
+				<behaviorsPack:SelectedItemBehavior Command="{Binding SelectedItemCommand, Mode=TwoWay}"/>
+			</ListView.Behaviors>
+		</ListView>
+		<Button Text="+"
+				TextColor="White"
+				FontSize="Large"
+				CornerRadius="50"
+				BackgroundColor="#ffa500"
+				Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"
+				AbsoluteLayout.LayoutFlags="PositionProportional"
+				AbsoluteLayout.LayoutBounds=".95,.95,80,80"
+				/>
+	</AbsoluteLayout>
+</ContentPage>

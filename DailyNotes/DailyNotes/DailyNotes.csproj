@@ -45,6 +45,10 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Resouces\TermsAndCondition.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>TermsAndCondition.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\NoteAddView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -77,6 +81,11 @@
     <Compile Update="AppShell.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
+    <Compile Update="Resouces\TermsAndCondition.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>TermsAndCondition.resx</DependentUpon>
+    </Compile>
     <Compile Update="Views\AboutPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
     </Compile>
@@ -88,6 +97,9 @@
     </Compile>
     <Compile Update="Views\LoginPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>
+    </Compile>
+    <Compile Update="Views\ListPage.xaml.cs">
+      <DependentUpon>ListPage.xaml</DependentUpon>
     </Compile>
     <Compile Update="Views\NewItemPage.xaml.cs">
       <DependentUpon>%(Filename)</DependentUpon>

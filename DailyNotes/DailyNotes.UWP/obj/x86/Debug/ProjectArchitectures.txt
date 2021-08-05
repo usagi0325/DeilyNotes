@@ -1,1 +1,1 @@
-C:\Users\usagi\source\repos\DailyNotes\DailyNotes\DailyNotes.UWP\DailyNotes.UWP.csproj;x86
+C:\Users\usagi\Documents\GitHub\DeilyNotes\DailyNotes\DailyNotes.UWP\DailyNotes.UWP.csproj;x86
