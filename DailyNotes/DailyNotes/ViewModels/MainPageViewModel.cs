@@ -34,6 +34,8 @@ namespace DailyNotes.ViewModels
         /// </summary>
         public AsyncReactiveCommand GetDBCommand { get; } = new AsyncReactiveCommand();
 
+        public ReactiveCommand<DateTime> SelectedDate { get; set; } = new ReactiveCommand<DateTime>();
+
         /// <summary>
         /// リフレッシュの状態
         /// </summary>
@@ -60,12 +62,13 @@ namespace DailyNotes.ViewModels
             ShowSettingCommand.Subscribe(async _ =>
             {
                 await NavigationService.NavigateAsync(typeof(SettingView).Name);
-
+                
             }).AddTo(Disposable);
 
             ShowNoteAddCommand.Subscribe(async _ =>
             {
                 await NavigationService.NavigateAsync(typeof(NoteAddView).Name);
+
             }).AddTo(Disposable);
 
             GetDBCommand.Subscribe(async _ =>

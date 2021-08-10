@@ -672,6 +672,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -680,6 +694,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -1470,6 +1485,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1478,6 +1507,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -2269,6 +2299,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -2277,6 +2321,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -3065,6 +3110,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3073,6 +3132,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -3863,6 +3923,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -3871,6 +3945,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -4662,6 +4737,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -4670,6 +4759,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -5460,6 +5550,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -5468,6 +5572,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -6259,6 +6364,20 @@
           "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll": {}
         }
       },
+      "XamForms.Controls.Calendar/1.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Xamarin.Forms": "2.3.4.231"
+        },
+        "compile": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        },
+        "runtime": {
+          "lib/UAP10/XamForms.Controls.Calendar.UWP.dll": {},
+          "lib/UAP10/XamForms.Controls.Calendar.dll": {}
+        }
+      },
       "DailyNotes/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -6267,6 +6386,7 @@
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
           "ReactiveProperty": "7.11.0",
+          "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
           "Xamarin.Essentials.Interfaces": "1.5.3.2",
           "Xamarin.Forms": "5.0.0.2012",
@@ -11631,6 +11751,30 @@
         "lib/netstandard2.0/Xamarin.Forms.BehaviorsPack.dll",
         "xamarin.forms.behaviorspack.3.0.0.nupkg.sha512",
         "xamarin.forms.behaviorspack.nuspec"
+      ]
+    },
+    "XamForms.Controls.Calendar/1.1.1": {
+      "sha512": "GCydwm9HO+8V4iGVsGJZtnHJaqIpjas40BSRU+T7lIM7E4nZ7pOn2Ifzu0Y6MLrZJuqCHFeroOWjJSfOjZIyyw==",
+      "type": "package",
+      "path": "xamforms.controls.calendar/1.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/MonoAndroid10/XamForms.Controls.Calendar.Droid.dll",
+        "lib/MonoAndroid10/XamForms.Controls.Calendar.dll",
+        "lib/MonoTouch10/XamForms.Controls.Calendar.dll",
+        "lib/MonoTouch10/XamForms.Controls.Calendar.iOS.dll",
+        "lib/UAP10/XamForms.Controls.Calendar.UWP.dll",
+        "lib/UAP10/XamForms.Controls.Calendar.dll",
+        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.dll",
+        "lib/Xamarin.iOS10/XamForms.Controls.Calendar.iOS.dll",
+        "lib/portable-net45+wp8+win8+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/XamForms.Controls.Calendar.dll",
+        "lib/win81/XamForms.Controls.Calendar.Windows.dll",
+        "lib/win81/XamForms.Controls.Calendar.dll",
+        "lib/wpa81/XamForms.Controls.Calendar.WinPhone.dll",
+        "lib/wpa81/XamForms.Controls.Calendar.dll",
+        "xamforms.controls.calendar.1.1.1.nupkg.sha512",
+        "xamforms.controls.calendar.nuspec"
       ]
     },
     "DailyNotes/1.0.0": {

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "0dx9fp+IuhkEoDvU9XBJvX3x+goSyYgpFhVAwxH16+bKxgOCIwcLGZFuhaUjuAtXfoOqTW3x/Rzr3iGWXZre0w==",
+  "dgSpecHash": "EmLKfw5lgGoijoZGNGBqJrzv9wncnWMOJWUlvDJd2HbuYnYZ0kKvunxuHdfF6XwIUKM5tYQDWZdLXXdTH5CdKw==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.iOS\\DailyNotes.iOS.csproj",
   "expectedPackageFiles": [
@@ -28,7 +28,8 @@
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials\\1.6.1\\xamarin.essentials.1.6.1.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms\\4.8.0.1364\\xamarin.forms.4.8.0.1364.nupkg.sha512",
-    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms.behaviorspack\\3.0.0\\xamarin.forms.behaviorspack.3.0.0.nupkg.sha512"
+    "C:\\Users\\usagi\\.nuget\\packages\\xamarin.forms.behaviorspack\\3.0.0\\xamarin.forms.behaviorspack.3.0.0.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\xamforms.controls.calendar\\1.1.1\\xamforms.controls.calendar.1.1.1.nupkg.sha512"
   ],
   "logs": [
     {
