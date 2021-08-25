@@ -52,6 +52,11 @@ namespace DailyNotes.Data
         {
             return Database.Table<Notes>().Where(x => x.Id == idNo).FirstOrDefaultAsync();
         }
+
+        public Task<Notes> GetNoteAsync(DateTime dateTime){
+            return Database.Table<Notes>().Where(x => x.InputDateTime == dateTime).FirstOrDefaultAsync();
+		}
+
         /// <summary>
         /// ノートを登録する
         /// </summary>

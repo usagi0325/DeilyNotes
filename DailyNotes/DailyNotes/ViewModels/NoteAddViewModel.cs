@@ -34,10 +34,10 @@ namespace DailyNotes.ViewModels
 
 		public ReactiveProperty<bool> IsPassWord { get; } = new ReactiveProperty<bool>();
 
-		public ReactiveProperty<byte[]>SelectImage { get;} = new ReactiveProperty<byte[]>();
+		public ReactiveProperty<byte[]> SelectImage { get; } = new ReactiveProperty<byte[]>();
 
 		public ReactiveProperty<bool> SelectedImage { get; } = new ReactiveProperty<bool>(false);
- 
+
 
 		/// <summary>
 		/// 登録ボタン
@@ -65,12 +65,15 @@ namespace DailyNotes.ViewModels
 		{
 			NoteSubmitCommand.Subscribe(async _ =>
 			{
-				Notes notes = new Notes { Id = Id.Value, 
-										  NoteName = Name.Value, 
-										  NoteContents = Contents.Value, 
-										  InputDateTime = Input.Value,
-									      IsPassWord = IsPassWord.Value,
-										  ImageByte = SelectImage.Value};
+				Notes notes = new Notes
+				{
+					Id = Id.Value,
+					NoteName = Name.Value,
+					NoteContents = Contents.Value,
+					InputDateTime = Input.Value,
+					IsPassWord = IsPassWord.Value,
+					ImageByte = SelectImage.Value
+				};
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 				// 入力内容を保存
@@ -86,13 +89,15 @@ namespace DailyNotes.ViewModels
 			NoteDeleteCommand.Subscribe(async _ =>
 			{
 				// 削除対象
-				Notes notes = new Notes { Id = Id.Value, 
-										  NoteName = Name.Value, 
-										  NoteContents = Contents.Value, 
-										  InputDateTime = Input.Value,
-										  IsPassWord = IsPassWord.Value,
-										  ImageByte = SelectImage.Value
-										  };
+				Notes notes = new Notes
+				{
+					Id = Id.Value,
+					NoteName = Name.Value,
+					NoteContents = Contents.Value,
+					InputDateTime = Input.Value,
+					IsPassWord = IsPassWord.Value,
+					ImageByte = SelectImage.Value
+				};
 
 				NotesDatabase notesDatabase = await NotesDatabase.Instance;
 
@@ -118,7 +123,7 @@ namespace DailyNotes.ViewModels
 			ImageSelection.Subscribe(async _ =>
 			{
 				Stream stream = await DependencyService.Get<IPhotoPickerService>().GetImageStreamAsync();
-				if(stream != null)
+				if (stream != null)
 				{
 					byte[] imageByte = StreamToByteConverter.StreamToByte(stream);
 
@@ -131,20 +136,35 @@ namespace DailyNotes.ViewModels
 		{
 			base.OnNavigatedTo(parameters);
 
-			var notes = parameters.GetValue<Notes>("Collection");
+			var note = parameters.GetValue<Notes>("NoteData");
+			var selectDate = parameters.GetValue<DateTime>("SelectDate");
 
-			Id.Value = notes.Id;
-			Name.Value = notes.NoteName;
-			Contents.Value = notes.NoteContents;
-			Input.Value = notes.InputDateTime;
-			IsPassWord.Value = notes.IsPassWord;
-			SelectImage.Value = notes.ImageByte;
+			// DBに登録されている場合
+			if (note != null)
+			{
+				Id.Value = note.Id;
+				Name.Value = note.NoteName;
+				Contents.Value = note.NoteContents;
+				Input.Value = note.InputDateTime;
+				IsPassWord.Value = note.IsPassWord;
+				SelectImage.Value = note.ImageByte;
+			}
+			// DBに登録されていない場合
+			else
+			{
+				Name.Value = "";
+				Contents.Value = "";
+				Input.Value = selectDate;
+				IsPassWord.Value = false;
+				SelectImage.Value = null;
+			}
 
-
-			if(SelectImage.Value == null){
+			if (SelectImage.Value == null)
+			{
 				SelectedImage.Value = false;
 			}
-			else{
+			else
+			{
 				SelectedImage.Value = true;
 			}
 		}

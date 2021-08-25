@@ -32,11 +32,6 @@ namespace DailyNotes.Models
         public DateTime InputDateTime { get; set; }
 
         /// <summary>
-        /// 更新時間
-        /// </summary>
-        public DateTime UpdateDateTime { get; set; }
-
-        /// <summary>
         /// パスワードを掛けるかどうか
         /// </summary>
         public bool IsPassWord { get; set; }

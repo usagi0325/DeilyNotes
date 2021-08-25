@@ -29,12 +29,41 @@
                        DisabledBorderColor="Black"
 					   TitleLabelTextColor="Aqua"
 					   TitleLabelFormat="yyyy年MM月"
-					   DateCommand="{Binding ShowNoteAddCommand}"
-					   SelectedDate="{Binding SelectedDate}"
+					   DateCommand="{Binding PushSelectedDate}"
+					   SelectedDate="{Binding SelectedDate.Value}"
 					   />
 		</StackLayout>
 		<StackLayout>
-			
+			<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
+			      HasUnevenRows="True" 
+				  IsPullToRefreshEnabled="True" 
+				  RefreshCommand="{Binding GetDBCommand}" 
+				  IsRefreshing="{Binding IsRefreshing.Value, Mode=TwoWay}"
+				  >
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<Frame CornerRadius="10" BorderColor="Black" BackgroundColor="White" Margin="5">
+								<StackLayout Orientation="Vertical">
+									<Image Source="{localimage:ImageResource DailyNotes.Images.LockIcon.png}"
+										   WidthRequest="25"
+										   HeightRequest="25"
+										   HorizontalOptions="EndAndExpand"
+										   IsVisible="{Binding IsPassWord}"/>
+									<Image Source="{Binding ImageByte, Converter={StaticResource ImgFromByte}}"
+									   HeightRequest="200" 
+									   WidthRequest="250"
+									   HorizontalOptions="CenterAndExpand"/>
+									<Label Text="{Binding NoteContents}" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+								</StackLayout>
+							</Frame>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+				<ListView.Behaviors>
+					<behaviorsPack:SelectedItemBehavior Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
+				</ListView.Behaviors>
+			</ListView>
 		</StackLayout>
 	</StackLayout>
 </ContentPage>

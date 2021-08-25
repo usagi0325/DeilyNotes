@@ -39,6 +39,11 @@
 				<ColumnDefinition Width="Auto"/>
 			</Grid.ColumnDefinitions>
 			<Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
+				<StackLayout>
+					<Label Text="{Binding Input.Value}"/>
+				</StackLayout>
+			</Frame>
+			<Frame Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" BorderColor="Black">
 				<StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 					<Image Source="{localimage:ImageResource DailyNotes.Images.ImageSelectIcon.png}" 
 						   IsVisible="{Binding SelectedImage.Value , Converter={StaticResource BoolInversion}}"
