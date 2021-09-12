@@ -149,6 +149,10 @@
               "target": "Package",
               "version": "[8.0.0.1909, )"
             },
+            "PublicHoliday": {
+              "target": "Package",
+              "version": "[2.6.0, )"
+            },
             "ReactiveProperty": {
               "target": "Package",
               "version": "[7.11.0, )"

@@ -35,6 +35,7 @@
   <ItemGroup>
     <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="4.0.10" />
     <PackageReference Include="Prism.Core" Version="8.1.97" />
+    <PackageReference Include="PublicHoliday" Version="2.6.0" />
     <PackageReference Include="ReactiveProperty" Version="7.11.0" />
     <PackageReference Include="sqlite-net-pcl" Version="1.7.335" />
     <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />

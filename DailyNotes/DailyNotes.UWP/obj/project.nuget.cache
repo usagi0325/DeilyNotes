@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "iJyw3Te7uuV1s5Le3Upxh3susSK2QjeLiylx+Rs2LgqO/FHAh5RZX7uYcxuEzh15Ta82rEf0m7xUBN32v5z96A==",
+  "dgSpecHash": "ULvjdfFmDKCKg/c71CeilIU+s7q07M6gOZP8E9vT8SwlfMbTw77+9h0DC8yQ19GP0A2owyXSu3fzBsmJTVkqQg==",
   "success": true,
   "projectFilePath": "C:\\Users\\usagi\\Documents\\GitHub\\DeilyNotes\\DailyNotes\\DailyNotes.UWP\\DailyNotes.UWP.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\usagi\\.nuget\\packages\\prism.core\\8.1.97\\prism.core.8.1.97.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.forms\\8.0.0.1909\\prism.forms.8.0.0.1909.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\prism.unity.forms\\8.0.0.1909\\prism.unity.forms.8.0.0.1909.nupkg.sha512",
+    "C:\\Users\\usagi\\.nuget\\packages\\publicholiday\\2.6.0\\publicholiday.2.6.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty\\7.11.0\\reactiveproperty.7.11.0.nupkg.sha512",
     "C:\\Users\\usagi\\.nuget\\packages\\reactiveproperty.core\\7.11.0\\reactiveproperty.core.7.11.0.nupkg.sha512",
     "C:\\Program Files (x86)\\Microsoft SDKs\\UWPNuGetPackages\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform\\6.2.10\\runtime.win10-arm-aot.microsoft.netcore.universalwindowsplatform.6.2.10.nupkg.sha512",

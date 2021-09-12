@@ -15,55 +15,61 @@
 			<con:ImageSourceFromByteArrayConverter x:Key="ImgFromByte"/>
 		</ResourceDictionary>
 	</ContentPage.Resources>
-
 	<ContentPage.ToolbarItems>
 		<ToolbarItem Text="設定" Order="Secondary" Command="{Binding ShowSettingCommand, Mode=TwoWay}"/>
 		<ToolbarItem Text="ボタン" Order="Primary" Command="{Binding GetDBCommand, Mode=TwoWay}"/>
 	</ContentPage.ToolbarItems>
-	<StackLayout>
-		<StackLayout>
-	<controls:Calendar x:Name="_calendar"
-                       Padding="10,0,10,0" 
-					   StartDay="Sunday" 
-                       SelectedBorderWidth="4"
-                       DisabledBorderColor="Black"
-					   TitleLabelTextColor="Aqua"
-					   TitleLabelFormat="yyyy年MM月"
-					   DateCommand="{Binding PushSelectedDate}"
-					   SelectedDate="{Binding SelectedDate.Value}"
-					   />
-		</StackLayout>
-		<StackLayout>
-			<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
+	<Grid>
+		<Grid.RowDefinitions>
+			<RowDefinition Height="300"/>
+			<RowDefinition Height="Auto"/>
+			<RowDefinition Height="Auto"/>
+		</Grid.RowDefinitions>
+		<Grid.ColumnDefinitions>
+			<ColumnDefinition Width="Auto"/>
+		</Grid.ColumnDefinitions>
+		<controls:Calendar x:Name="_calendar"
+					       Padding="15,0,15,0" 
+					       StartDay="Sunday" 
+				    	   SelectedBorderWidth="5"
+					       DisabledBorderColor="Black"
+						   TitleLabelTextColor="Aqua"
+						   TitleLabelFormat="yyyy年MM月"
+						   DateCommand="{Binding PushSelectedDate}"
+						   SelectedDate="{Binding SelectedDate.Value}"
+						   Grid.Row="0"
+						   Grid.RowSpan="2"
+						   />
+		<ListView ItemsSource="{Binding TestCollection, Mode=TwoWay}" 
 			      HasUnevenRows="True" 
 				  IsPullToRefreshEnabled="True" 
 				  RefreshCommand="{Binding GetDBCommand}" 
 				  IsRefreshing="{Binding IsRefreshing.Value, Mode=TwoWay}"
+				  Grid.Row="3"
 				  >
-				<ListView.ItemTemplate>
-					<DataTemplate>
-						<ViewCell>
-							<Frame CornerRadius="10" BorderColor="Black" BackgroundColor="White" Margin="5">
-								<StackLayout Orientation="Vertical">
-									<Image Source="{localimage:ImageResource DailyNotes.Images.LockIcon.png}"
+			<ListView.ItemTemplate>
+				<DataTemplate>
+					<ViewCell>
+						<Frame CornerRadius="10" BorderColor="Black" BackgroundColor="White" Margin="5">
+							<StackLayout Orientation="Vertical">
+								<Image Source="{localimage:ImageResource DailyNotes.Images.LockIcon.png}"
 										   WidthRequest="25"
 										   HeightRequest="25"
 										   HorizontalOptions="EndAndExpand"
 										   IsVisible="{Binding IsPassWord}"/>
-									<Image Source="{Binding ImageByte, Converter={StaticResource ImgFromByte}}"
+								<Image Source="{Binding ImageByte, Converter={StaticResource ImgFromByte}}"
 									   HeightRequest="200" 
 									   WidthRequest="250"
 									   HorizontalOptions="CenterAndExpand"/>
-									<Label Text="{Binding NoteContents}" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
-								</StackLayout>
-							</Frame>
-						</ViewCell>
-					</DataTemplate>
-				</ListView.ItemTemplate>
-				<ListView.Behaviors>
-					<behaviorsPack:SelectedItemBehavior Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
-				</ListView.Behaviors>
-			</ListView>
-		</StackLayout>
-	</StackLayout>
+								<Label Text="{Binding NoteContents}" FontSize="Medium" HorizontalOptions="CenterAndExpand"/>
+							</StackLayout>
+						</Frame>
+					</ViewCell>
+				</DataTemplate>
+			</ListView.ItemTemplate>
+			<ListView.Behaviors>
+				<behaviorsPack:SelectedItemBehavior Command="{Binding ShowNoteAddCommand, Mode=TwoWay}"/>
+			</ListView.Behaviors>
+		</ListView>
+	</Grid>
 </ContentPage>

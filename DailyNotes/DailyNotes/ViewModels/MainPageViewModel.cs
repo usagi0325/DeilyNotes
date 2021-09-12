@@ -93,7 +93,7 @@ namespace DailyNotes.ViewModels
 						{
 							Id = 0,
 							NoteName = "",
-							NoteContents = "",
+							NoteContents = "登録なし",
 							InputDateTime = selectDateTime,
 							IsPassWord = false,
 							PassWord = "",

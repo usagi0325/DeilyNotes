@@ -277,6 +277,18 @@
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
         }
       },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        }
+      },
       "ReactiveProperty/7.11.0": {
         "type": "package",
         "dependencies": {
@@ -693,6 +705,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -984,6 +997,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -1506,6 +1531,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -1797,6 +1823,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -2320,6 +2358,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -2611,6 +2650,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -3131,6 +3182,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -3422,6 +3474,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -3944,6 +4008,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -4235,6 +4300,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -4758,6 +4835,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -5049,6 +5127,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -5571,6 +5661,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -5862,6 +5953,18 @@
         },
         "runtime": {
           "lib/netstandard2.0/Prism.Unity.Forms.dll": {}
+        }
+      },
+      "PublicHoliday/2.6.0": {
+        "type": "package",
+        "dependencies": {
+          "NETStandard.Library": "1.6.0"
+        },
+        "compile": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.3/PublicHoliday.dll": {}
         }
       },
       "ReactiveProperty/7.11.0": {
@@ -6385,6 +6488,7 @@
           "Com.Airbnb.Xamarin.Forms.Lottie": "4.0.10",
           "Prism.Core": "8.1.97",
           "Prism.Unity.Forms": "8.0.0.1909",
+          "PublicHoliday": "2.6.0",
           "ReactiveProperty": "7.11.0",
           "XamForms.Controls.Calendar": "1.1.1",
           "Xamarin.Essentials": "1.6.1",
@@ -7039,6 +7143,25 @@
         "prism-logo.png",
         "prism.unity.forms.8.0.0.1909.nupkg.sha512",
         "prism.unity.forms.nuspec"
+      ]
+    },
+    "PublicHoliday/2.6.0": {
+      "sha512": "mpHnSrTjzUpai+Zdv96eQGWWV0D0nlcrD+4TWmoKMU6BW8H77K6bUcvT2vyb46wrVKiis9mOTtzS4UzlcWE9vg==",
+      "type": "package",
+      "path": "publicholiday/2.6.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net35/PublicHoliday.dll",
+        "lib/net35/PublicHoliday.xml",
+        "lib/net40/PublicHoliday.dll",
+        "lib/net40/PublicHoliday.xml",
+        "lib/net46/PublicHoliday.dll",
+        "lib/net46/PublicHoliday.xml",
+        "lib/netstandard1.3/PublicHoliday.dll",
+        "lib/netstandard1.3/PublicHoliday.xml",
+        "publicholiday.2.6.0.nupkg.sha512",
+        "publicholiday.nuspec"
       ]
     },
     "ReactiveProperty/7.11.0": {
